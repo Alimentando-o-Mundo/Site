@@ -1,0 +1,12 @@
+header{
+    nav{
+        background: #cf6223c7;
+        border-radius: 50px;
+        position: fixed;
+        width: 92%;
+        left: 50%;
+        top: 24px;
+        transform: translateX(-50%);
+        
+    }
+}
