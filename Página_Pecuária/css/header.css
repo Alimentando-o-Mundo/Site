@@ -1,4 +1,4 @@
-header{
+section#nav-bar{
         background: #cf6223c9;
         border-radius: 50px;
         position: fixed;
@@ -15,11 +15,11 @@ header{
     }
     ul{
         display: flex;
-        background-color: #ce6d34c2;
+        background-color: #ad40019c;
         
         border-radius: 4vw;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 0.67rem;
         font-weight: 600;
     }
     li{
