@@ -199,3 +199,7 @@ textarea,
   background-color: transparent; /* 3 */
   opacity: 1; /* 4 */
 }
+p {
+  margin: 0;
+  padding: 0;
+}

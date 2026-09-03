@@ -3,3 +3,171 @@
 html{
     font-family: 'Poppins', sans-serif;
 }
+/* nav css*/
+section#nav-bar{
+        background: #cf6223c9;
+        border-radius: 50px;
+        position: fixed;
+        width: 90%;
+        margin: 0 auto;
+        left: 5%;
+        top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    nav{
+        display: flex;
+    }
+    ul{
+        display: flex;
+        background-color: #ad40019c;
+        border-radius: 4vw;
+        text-align: center;
+        font-size: 0.69rem;
+        font-weight: 600;
+    }
+    li{
+        color: #fff;
+        padding: 1vw;
+        margin: 2.5px;
+    }
+    li:hover{
+        background-color: rgb(255, 126, 67);
+        margin: 2.1px;
+        border-radius: 4vw;
+    }
+} 
+
+i#burguer{
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0 2vw;
+    font-size: 3rem;
+}
+i#burguer:hover{
+    color: rgb(194, 194, 194);
+    
+}
+
+.menu{
+    display: none;
+}
+
+.logo{
+    padding: 6px 2vw 0vw 3.5vw;
+    
+} /* nav css fim*/
+
+header{
+    height: 550px;
+    background-image: url("bannerImg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header div{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    height: 400px;
+    background-color:  rgba(252, 115, 35, 0.733);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+header div h1{
+    font-size: 128px;
+    font-weight: bold;
+    color: white;
+    padding: 50px 0 0 0;
+}
+
+header div h2{
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 3px;
+}
+
+header div p{
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 0 0 2px 0;
+}
+
+main {
+    background-color: #FFF8EB ;
+}
+
+.moldura {
+    border: 10px solid #CF6123;
+    padding: 20px; 
+    margin: 15px;
+    border-radius: 20px;
+    width: 623px;
+    height: 416px;
+}
+
+.moldura h2 {
+    width: 615px;
+    height: 43px;
+    font-size: 31px;
+    font-weight: 500;
+}
+
+.moldura h3 {
+    color: #CF6123;
+    font-size: 21px;
+    font-weight: 600;
+    width: 608px;
+    height: 64px;
+}
+
+.moldura p {
+    font-size: 19px;
+    width: 605;
+    height: 290;
+}
+
+.como {
+    display: flex;
+    justify-content: center;
+}
+
+.como img{
+    padding: 40px 20px;
+    width: 623px;
+    height: 416px;
+}
+
+#situacao h2{
+    color: #CF6123;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 43px;
+    font-weight: 600;
+    padding: 50px 0 20px 0;
+}
+
+#situacao p{
+    font-size: 24px;
+    width: 1312px;
+    height: 504px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+#situacao img {
+    display: block;
+    margin: 0 auto;
+}

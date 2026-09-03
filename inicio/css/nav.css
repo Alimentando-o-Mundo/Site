@@ -6,7 +6,6 @@ section#nav-bar{
         margin: 0 auto;
         left: 5%;
         top: 24px;
-        /*transform: translateX(-50%);*/
         display: flex;
         justify-content: space-between;
         align-items: center;
