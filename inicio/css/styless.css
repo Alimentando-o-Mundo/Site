@@ -4,6 +4,7 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 /* nav css*/
+/*
 section#nav-bar{
         background: #cf6223c9;
         border-radius: 50px;
@@ -56,7 +57,7 @@ i#burguer:hover{
 .logo{
     padding: 6px 2vw 0vw 3.5vw;
     
-} /* nav css fim*/
+} */ /* nav css fim*/
 
 header{
     height: 550px;

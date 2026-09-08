@@ -6,7 +6,6 @@ section#nav-bar{
         margin: 0 auto;
         left: 5%;
         top: 24px;
-        /*transform: translateX(-50%);*/
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -16,10 +15,9 @@ section#nav-bar{
     ul{
         display: flex;
         background-color: #ad40019c;
-        
         border-radius: 4vw;
         text-align: center;
-        font-size: 0.67rem;
+        font-size: 0.69rem;
         font-weight: 600;
     }
     li{
@@ -51,4 +49,5 @@ i#burguer:hover{
 
 .logo{
     padding: 6px 2vw 0vw 3.5vw;
+    
 }
