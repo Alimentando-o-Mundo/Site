@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Poppins", sans-serif; 
+}
+
+header {
+  height: 750px;
+  background-image: url("bannerImg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header div {
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  right: 5%;
+  height: 600px;
+  background-color: #cf6223c9;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 2;
+}
+
+header div h1 {
+  font-size: 8.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 100px 0 0 0;
+}
+
+header div h2 {
+  font-size: 5.8rem;
+  font-weight: 400;
+  color: white;
+  padding: 0px 0 0 0;
+}
+
+header div p {
+  font-size: 64px;
+  font-weight: light;
+  color: white;
+  padding: 0 0 2px 0;
+}
+/* ===== como ==== */
+main {
+  background-color: #fff8eb;
+}
+
+.moldura {
+  border: 10px solid #cf6123;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 20px;
+  width: 800px;
+  height: 430px;
+}
+
+.moldura h2 {
+  width: 615px;
+  height: 43px;
+  font-size: 31px;
+  font-weight: 500;
+}
+
+.moldura h3 {
+  color: #cf6123;
+  font-size: 21px;
+  font-weight: 600;
+  width: 608px;
+  height: 64px;
+}
+
+.moldura p {
+  font-size: 19px;
+  width: 605px;
+  height: 290px;
+}
+
+section#como {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+/* ===== como ==== */
+#situacao h2 {
+  color: #cf6123;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 43px;
+  font-weight: 600;
+  padding: 50px 0 20px 0;
+}
+
+#situacao p {
+  font-size: 24px;
+  width: 1312px;
+  height: 504px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#situacao img {
+  display: block;
+  margin: 0 auto;
+}

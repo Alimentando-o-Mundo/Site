@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 550px;
+    background-image: url("../imagens/Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+header div{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    height: 400px;
+    background-color:  rgba(252, 115, 35, 0.733);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+header div h1{
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    padding: 50px 50px 0 50px;
+}
+
+header div h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    padding: 0;
+}
+
+header div p{
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+}
+
+section.producao {
+    padding: 4vw;
+    text-align: center;
+}
+
+section.producao h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+    color: #CF6123;
+    border-bottom: solid 5px #CF6123;
+}
+
+section.producao p{
+    padding: 1.2vw 0 2vw 0;
+    font-size: 18px;
+}
+
+section.producao img{
+    padding: 3vw 0 2vw 0;
+}
+
+section.producao ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 3vw;
+}
+
+section.producao ul li{
+    border: solid 7px  #CF6123;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    text-align: left;
+    width: 40vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+section.producao h3{
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 6vw 0 6vw;
+    color: #CF6123;
+    border-bottom: solid 5px #CF6123;
+}
+
+section.producao p.anos{
+    padding: 2vw 0 0 0;
+    font-size: 14px;
+    color: #CF6123;
+}
+
+hr{
+    border: none;
+    border-top: 7px dashed #CF6123;
+    margin: 0vw 0;
+}
+
+section.impactos {
+    padding: 4vw;
+    text-align: center;
+}
+
+section.impactos h2{
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 6vw 0 6vw;
+    color: #CF6123;
+    border-bottom: solid 5px #CF6123;
+}
+
+section.impactos ul{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 3vw;
+}
+
+section.impactos ul li{
+    border: solid 7px  #CF6123;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    text-align: left;
+    width: 40vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+section.organizacao {
+    margin: 2vw 4vw 5vw 4vw;
+    text-align: center;
+}
+
+section.organizacao h2{
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 6vw 0 6vw;
+    color: #CF6123;
+    border-bottom: solid 5px #CF6123;
+}
+
+section.organizacao p{
+    padding: 3vw 0 0 0;
+    margin: 0.5vw;
+    font-size: 18px;
+}
+
+footer{
+    background-color: #CF6123;
+    text-align: right;
+    padding: 0.5vw 4vw 0 0;
+}
