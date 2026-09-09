@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 html{
     font-family: 'Poppins', sans-serif;
 }
 
 /* === HEADER === */
 header{
-    height: 550px;
-    background-image: url("src/img.png");
+    height: 750px;
+    background-image: url("banner.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -18,7 +19,7 @@ header div{
     top: 100px;
     left: 5%;
     right: 5%;
-    height: 400px;
+    height: 600px;
     background-color:  #cf6223c9;
     border-radius: 30px;
     display: flex;
@@ -27,4 +28,33 @@ header div{
     justify-content: space-between;
     padding: 0 25px;
     z-index: 2;
+}
+
+header div h1 {
+    font-size: 8.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 100px 0 0 0;
+    font-family: "Figtree", sans-serif;
+}
+
+header div h2 {
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: white;
+    margin-top: -45px;
+    padding: 0 0 2vw 0;
+    font-family: "Figtree", sans-serif;
+}
+
+header div p {
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 0 0 2px 0;
+}
+/* === MAIN === */
+
+main{
+    background-color: #fff8eb;
 }
