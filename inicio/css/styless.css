@@ -56,28 +56,24 @@ main {
   background-color: #fff8eb;
 }
 
-.moldura {
+moldura {
   border: 10px solid #cf6123;
   padding: 20px;
   margin: 15px;
   border-radius: 20px;
   width: 800px;
-  height: 430px;
+  height: 555px;
 }
 
 .moldura h2 {
-  width: 615px;
-  height: 43px;
-  font-size: 31px;
+  font-size: 35px;
   font-weight: 500;
 }
 
 .moldura h3 {
   color: #cf6123;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 600;
-  width: 608px;
-  height: 64px;
 }
 
 .moldura p {
