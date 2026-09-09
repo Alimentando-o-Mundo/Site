@@ -1,4 +1,4 @@
-header{
+section#nav-bar{
         background: #cf6223c9;
         border-radius: 50px;
         position: fixed;
@@ -6,7 +6,6 @@ header{
         margin: 0 auto;
         left: 5%;
         top: 24px;
-        /*transform: translateX(-50%);*/
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -15,11 +14,10 @@ header{
     }
     ul{
         display: flex;
-        background-color: #ce6d34c2;
-        
+        background-color: #ad40019c;
         border-radius: 4vw;
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 0.69rem;
         font-weight: 600;
     }
     li{
