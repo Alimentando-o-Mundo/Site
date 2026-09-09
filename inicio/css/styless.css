@@ -5,8 +5,8 @@ html {
 }
 
 header {
-  height: 750px;
-  background-image: url("banner.png");
+  height: 620px;
+  background-image: url("../src/img.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -17,7 +17,7 @@ header div {
   top: 100px;
   left: 5%;
   right: 5%;
-  height: 600px;
+  height: 480px;
   background-color: #cf6223c9;
   border-radius: 30px;
   display: flex;
@@ -29,7 +29,7 @@ header div {
 }
 
 header div h1 {
-    font-size: 8.5rem;
+    font-size: 8rem;
     font-weight: bold;
     color: white;
     padding: 100px 0 0 0;
@@ -37,19 +37,19 @@ header div h1 {
 }
 
 header div h2 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 400;
     color: white;
-    margin-top: -60px;
+    margin-top: -40px;
     padding: 0 0 2vw 0;
     font-family: "Figtree", sans-serif;
 }
 
 header div p {
-  font-size: 64px;
-  font-weight: light;
-  color: white;
-  padding: 0 0 2px 0;
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 0 0 2px 0;
 }
 /* ===== como ==== */
 main {
