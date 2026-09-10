@@ -5,7 +5,7 @@ html {
 }
 
 header {
-  height: 620px;
+  height: 750px;
   background-image: url("../src/img.png");
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@ header div {
   top: 100px;
   left: 5%;
   right: 5%;
-  height: 480px;
+  height: 600px;
   background-color: #cf6223c9;
   border-radius: 30px;
   display: flex;
@@ -40,7 +40,7 @@ header div h2 {
     font-size: 5rem;
     font-weight: 400;
     color: white;
-    margin-top: -40px;
+    margin-top: -80px;
     padding: 0 0 2vw 0;
     font-family: "Figtree", sans-serif;
 }

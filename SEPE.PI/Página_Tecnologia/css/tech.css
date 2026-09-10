@@ -19,7 +19,7 @@ header div{
     top: 100px;
     left: 5%;
     right: 5%;
-    height: 550px;
+    height: 600px;
     background-color:  #cf6223c9;
     border-radius: 30px;
     display: flex;
@@ -42,7 +42,7 @@ header div h2 {
     font-size: 5rem;
     font-weight: 400;
     color: white;
-    margin-top: -45px;
+    margin-top: -85px;
     padding: 0 0 2vw 0;
     font-family: "Figtree", sans-serif;
 }
