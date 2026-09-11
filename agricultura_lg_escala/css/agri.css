@@ -123,6 +123,10 @@ section#como{
     }
 }
 
+#como img {
+    width: 800px;
+}
+
 /* === Vantagens === */
 
 section#vantagens{
@@ -154,6 +158,14 @@ section#vantagens{
             color: #CF6123;
             font-size: 0.9rem;
             padding: 8px 50px 8px 50px;
+        }
+
+        .li-vantagens{
+            padding-left: 4vw;
+        }
+
+        .li-preco{
+            padding-right: 2vw;
         }
     }
 }
