@@ -122,3 +122,38 @@ section#como{
         
     }
 }
+
+/* === Vantagens === */
+
+section#vantagens{
+    background-color: #FFD9C4;
+    margin: 6vw;
+    border-radius: 3.5vw;
+
+    h2{
+        color: #CF6123;
+        text-align: center;
+        padding: 4vw;
+        font-size: 2.3rem;
+        font-weight: bold;
+        font-family: "Figtree", sans-serif;
+    }
+
+    ul.vantagen-ul{
+        display: flex;
+        text-align: center;
+        padding: 4vw 4vw 2vw 2vw;
+
+        h3{
+            color: #CF6123;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 5px;
+        }
+        p{
+            color: #CF6123;
+            font-size: 0.9rem;
+            padding: 8px 50px 8px 50px;
+        }
+    }
+}
