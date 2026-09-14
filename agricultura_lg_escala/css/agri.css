@@ -169,3 +169,57 @@ section#vantagens{
         }
     }
 }
+
+section#produtos{
+    
+    h2{
+        color: #CF6123;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: bold;
+        font-family: "Figtree", sans-serif;
+        padding-top: 4vw;
+    }
+    h2 span{
+        border-bottom: 4px solid #CF6123;
+    }
+
+}
+section#produtos ul {
+    display: flex;
+    gap: 35px;
+    padding: 6vw;
+    background: url(../src/Ellipse\ 1.png) no-repeat padding-box ;
+    background-size: 100% auto;
+    background-position: center 9vw;
+}
+
+
+section#produtos ul li {
+    width: 400px;
+
+    h3 {
+        color: #CF6123;
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding: 20px 0 10px 0;
+        font-family: "Figtree", sans-serif;
+    }
+    h3 span{
+        border: 2.5px solid #CF6123;
+        border-radius: 5.5vw;
+        padding: 2px 15px ;
+    }
+
+    p{
+        color:#CF6123 ;
+        font-size: 1.2rem;
+        padding: 5px 2px;
+    }
+}
+
+section#produtos ul li img {
+    width: 400px;
+    height: 400px;
+    display: block;
+}
