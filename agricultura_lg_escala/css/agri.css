@@ -170,6 +170,7 @@ section#vantagens{
     }
 }
 
+/* === Produtos === */
 section#produtos{
     
     h2{
@@ -222,4 +223,50 @@ section#produtos ul li img {
     width: 400px;
     height: 400px;
     display: block;
+}
+
+/* === Dados === */
+
+section#dados{
+    background-color: #CF6123;
+    border-radius: 2vw;
+
+    h2{
+        color: #fff;
+        font-size: 2.3rem;
+        font-weight: bold;
+        font-family: "Figtree", sans-serif;
+        padding-top: 6vw;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        gap: 40px;
+        padding: 6vw;
+        justify-content: space-around;
+
+
+        li{
+            background-color: #fff;
+            width: 311px;
+            padding: 2vw 2vw 3.5vw 2vw;
+            border-radius: 2vw;
+        
+
+            h3{
+                color: #CF6123;
+                font-size: 1.3rem;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 4px;
+            }
+
+            p{
+                color: #CF6123;
+                font-size: 1.15rem;
+                padding: 10px 0 2px 2px;
+            }
+        }
+    }
 }
