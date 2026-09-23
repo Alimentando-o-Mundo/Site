@@ -1,0 +1,290 @@
+/* === IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    font-family: "Epilogue", sans-serif;
+}
+h1{
+    font-family: "Nunito", sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+}
+
+
+/* MEDIA QUERY - DESKTOP */
+
+
+    /* === IMPORTAÇÃO DE FONTES === */
+@import url('[https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap](https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap)');
+
+/* === VARIÁVEIS DE CORES E CONFIGURAÇÕES === */
+:root {
+    --primary-orange: #C85A17;
+    --border-orange: #C85A17;
+    --text-orange: #D4601A;
+    --bg-main: #FAF4E8;
+    --card-bg-orange: rgba(184, 80, 23, 0.75);
+    --text-dark: #333333;
+    --text-white: #FFFFFF;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+}
+
+body /*{
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}*/
+/* === HEADER === */
+header{
+    height: 750px;
+    background-image: url(../imagens/13\ 1\(2\).png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header div{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    height: 600px;
+    background-color:  #cf6223c9;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 2;
+}
+
+header div h1 {
+    font-size: 8.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 100px 0 0 0;
+    font-family: "Figtree", sans-serif;
+}
+
+header div h2 {
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: white;
+    margin-top: -45px;
+    padding: 0 0 2vw 0;
+    font-family: "Figtree", sans-serif;
+}
+
+header div p {
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 0 0 2px 0;
+}
+.hero-section {
+    width: 100%;
+    height: 480px;
+    background: url('13\ 1\(2\).png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-card {
+    background-color: var(--card-bg-orange);
+    width: 90%;
+    max-width: 900px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text-white);
+    backdrop-filter: blur(2px);
+}
+
+.hero-card h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.hero-card .subtitle {
+    font-family: "Epilogue", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+/* === MAIN CONTAINER === */
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* === TITULOS E SUBTITULOS === */
+.section-title {
+    font-family: "Epilogue", sans-serif;
+    color: var(--text-orange);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    display: table;
+    border-bottom: 3px solid var(--border-orange);
+    padding-bottom: 4px;
+}
+
+.section-subtitle {
+    font-family: "Fredoka", sans-serif;
+    color: var(--text-orange);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* === CARDS COM BORDA ARREDONDADA === */
+.outlined-card {
+    border: 3px solid var(--border-orange);
+    border-radius: 20px;
+    padding: 25px;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* === IMAGENS ARREDONDADAS === */
+.image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rounded-image {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 25px;
+    border: 3px solid var(--border-orange);
+    object-fit: cover;
+}
+
+/* === DIVISOR TRACEJADO === */
+.dashed-divider {
+    width: 100%;
+    border-top: 4px dashed var(--border-orange);
+    margin: 20px 0;
+}
+
+/* === TEXTO CONVENCIONAL === */
+.plain-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* === ESTRUTURA EM DUAS COLUNAS === */
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+.list-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.list-card li {
+    position: relative;
+    padding-left: 18px;
+}
+
+.list-card li::before {
+    content: "•";
+    color: var(--text-orange);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.highlight {
+    color: var(--text-orange);
+    font-weight: bold;
+}
+
+/* === FOOTER === */
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-orange);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* === MEDIA QUERIES (DESKTOP / TELA GRANDE) === */
+@media screen and (min-width: 768px) {
+    .two-column-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
