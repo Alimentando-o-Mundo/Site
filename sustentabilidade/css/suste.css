@@ -53,7 +53,7 @@ body /*{
 /* === HEADER === */
 header{
     height: 750px;
-    background-image: url(../imagens/13\ 1\(2\).png);
+    background-image: url(../src/13\ 1\(2\).png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -161,11 +161,12 @@ header div p {
 .section-title {
     font-family: "Epilogue", sans-serif;
     color: var(--text-orange);
-    font-size: 1.4rem;
+    font-size: 3.6rem;
     font-weight: 700;
     text-align: center;
     margin: 0 auto 20px auto;
     display: table;
+    padding-top: 3vw;
     border-bottom: 3px solid var(--border-orange);
     padding-bottom: 4px;
 }
@@ -204,10 +205,9 @@ header div p {
 .rounded-image {
     width: 100%;
     max-width: 650px;
-    border-radius: 25px;
-    border: 3px solid var(--border-orange);
-    object-fit: cover;
-}
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+} 
 
 /* === DIVISOR TRACEJADO === */
 .dashed-divider {

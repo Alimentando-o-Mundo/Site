@@ -189,7 +189,7 @@ section#produtos{
 section#produtos ul {
     display: flex;
     gap: 35px;
-    padding: 6vw;
+    padding: 7vw;
     background: url(../src/Ellipse\ 1.png) no-repeat padding-box ;
     background-size: 100% auto;
     background-position: center 9vw;
@@ -197,7 +197,7 @@ section#produtos ul {
 
 
 section#produtos ul li {
-    width: 400px;
+    width: 600px;
 
     h3 {
         color: #CF6123;
@@ -220,8 +220,8 @@ section#produtos ul li {
 }
 
 section#produtos ul li img {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     display: block;
 }
 
