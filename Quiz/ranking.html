@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Ranking | Alimentando o Mundo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"href="css/quiz.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a href="#" class="logo">
+
+        <span>🌾</span>
+
+        <div>
+            <strong>ALIMENTANDO</strong>
+            <strong>O MUNDO</strong>
+        </div>
+
+    </a>
+
+</header>
+
+
+<main class="ranking">
+
+    <span class="tag">
+        DESAFIO
+    </span>
+
+
+    <h1>
+        RANKING
+    </h1>
+
+
+    <p>
+        Veja como você se saiu!
+    </p>
+
+
+    <div id="listaRanking"></div>
+
+
+    <button
+        class="btn-principal"
+        onclick="location.href='quiz.html'">
+
+        JOGAR NOVAMENTE →
+
+    </button>
+
+</main>
+
+
+<script>
+
+const ranking =
+    JSON.parse(
+        localStorage.getItem("ranking")
+    ) || [];
+
+
+const lista =
+    document.getElementById("listaRanking");
+
+
+if (ranking.length === 0) {
+
+    lista.innerHTML = `
+        <div class="sem-ranking">
+            Ainda não existem jogadores.
+        </div>
+    `;
+
+}
+
+
+ranking.slice(0, 10).forEach((jogador, index) => {
+
+    const item =
+        document.createElement("div");
+
+
+    item.classList.add("jogador");
+
+
+    let medalha = index + 1;
+
+
+    if (index === 0) medalha = "🥇";
+    if (index === 1) medalha = "🥈";
+    if (index === 2) medalha = "🥉";
+
+
+    item.innerHTML = `
+
+        <div class="posicao">
+            ${medalha}
+        </div>
+
+        <div class="nome-jogador">
+            ${jogador.nome}
+        </div>
+
+        <strong>
+            ${jogador.pontos}/${jogador.total}
+        </strong>
+
+    `;
+
+
+    lista.appendChild(item);
+
+});
+
+</script>
+
+
+</body>
+
+</html>

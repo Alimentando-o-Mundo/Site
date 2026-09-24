@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz | Alimentando o Mundo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+   <header> <!--NAV (copiar e colar em todas as paginas!)-->
+        <section id="nav-bar">
+        <a href="index.html" class="logo"><img src="img/logo-v2.png" alt="logo"></a>
+            <nav id="nav_bar">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="#">Agricultura em Larga Escala</a>
+                    </li>
+                    <li>
+                        <a href="#">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Pecuária e Produção de Proteína</a>
+                    </li>
+                    <li>
+                        <a href="#">Desafios na Produção</a>
+                    </li>
+                    <li>
+                        <a href="#">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                </ul>
+            </nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()"></i>       
+    </section>
+    </header>
+
+
+    <!-- QUIZ -->
+    <main class="quiz">
+
+        <!-- TOPO -->
+        <div class="quiz-topo">
+
+            <div>
+                <span id="numero">Pergunta 1 de 10</span>
+            </div>
+
+            <div class="progresso-area">
+
+                <div class="barra">
+                    <div id="progresso"></div>
+                </div>
+
+            </div>
+
+            <strong id="porcentagem">10%</strong>
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+        <section class="quiz-card">
+
+            <div class="imagem">
+
+                <img id="imagemPergunta"
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                    alt="Agricultura">
+
+            </div>
+
+
+            <div class="pergunta-area">
+
+                <span class="tag">DESAFIO</span>
+
+                <h1 id="pergunta">
+                    Qual é um dos principais desafios para alimentar uma população mundial crescente?
+                </h1>
+
+
+                <div id="alternativas" class="alternativas">
+                </div>
+
+
+                <div id="explicacao" class="explicacao">
+
+                    <div class="icone">✓</div>
+
+                    <div>
+                        <strong id="tituloExplicacao">
+                            Muito bem!
+                        </strong>
+
+                        <p id="textoExplicacao">
+                            Você acertou a questão.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <button id="proxima" class="btn-proxima">
+                    PRÓXIMA PERGUNTA
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>

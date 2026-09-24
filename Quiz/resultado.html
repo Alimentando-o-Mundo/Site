@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado | Alimentando o Mundo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"href="css/quiz.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+
+    <a href="#" class="logo">
+
+        <span>🌾</span>
+
+        <div>
+            <strong>ALIMENTANDO</strong>
+            <strong>O MUNDO</strong>
+        </div>
+
+    </a>
+
+</header>
+
+
+<main class="resultado">
+
+    <div class="resultado-card">
+
+        <div class="check">
+            ✓
+        </div>
+
+
+        <span class="tag">
+            DESAFIO FINALIZADO
+        </span>
+
+
+        <h1>
+            QUIZ FINALIZADO!
+        </h1>
+
+
+        <p class="voce-acertou">
+            Você acertou
+        </p>
+
+
+        <div class="pontuacao">
+
+            <strong id="pontos">
+                0
+            </strong>
+
+            <span>
+                de 10
+            </span>
+
+        </div>
+
+
+        <div class="mensagem">
+
+            <strong id="mensagem">
+                Muito bom!
+            </strong>
+
+            <p>
+                Você demonstrou bons conhecimentos
+                sobre produção de alimentos e
+                sustentabilidade.
+            </p>
+
+        </div>
+
+
+        <input
+            id="nome"
+            type="text"
+            placeholder="Digite seu nome"
+            maxlength="30"
+        >
+
+
+        <div class="botoes">
+
+            <button
+                class="btn-principal"
+                onclick="salvarResultado()">
+
+                SALVAR NO RANKING →
+
+            </button>
+
+
+            <button
+                class="btn-secundario"
+                onclick="location.href='quiz.html'">
+
+                TENTAR NOVAMENTE
+
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script>
+
+const pontos =
+    Number(localStorage.getItem("quizPontos")) || 0;
+
+const total =
+    Number(localStorage.getItem("quizTotal")) || 10;
+
+
+document.getElementById("pontos")
+    .textContent = pontos;
+
+
+document.querySelector(".pontuacao span")
+    .textContent = `de ${total}`;
+
+
+function salvarResultado() {
+
+    const nome =
+        document.getElementById("nome").value.trim();
+
+
+    if (!nome) {
+
+        alert("Digite seu nome!");
+
+        return;
+
+    }
+
+
+    const ranking =
+        JSON.parse(
+            localStorage.getItem("ranking")
+        ) || [];
+
+
+    ranking.push({
+
+        nome: nome,
+
+        pontos: pontos,
+
+        total: total
+
+    });
+
+
+    ranking.sort((a, b) =>
+        b.pontos - a.pontos
+    );
+
+
+    localStorage.setItem(
+        "ranking",
+        JSON.stringify(ranking)
+    );
+
+
+    window.location.href =
+        "ranking.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
