@@ -270,3 +270,48 @@ section#dados{
         }
     }
 }
+
+footer{
+    background-color: #CF6123;
+    margin-top: 4vw;
+    padding: 2.5vw 6vw;
+    display: flex;
+    justify-content: center;
+    
+
+    h2{
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 3px 16px;
+        }
+
+        .geral{
+            padding-right: 0vw;
+        }
+
+    .titulo{
+        display: flex;
+
+        h2{
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 3px 16px;
+        }
+        
+    }
+    p{
+        color: #F7F1E8;
+        padding: 20px 0 0 0;
+        font-size: 1.1rem;
+    }
+
+    .mapa{
+        padding: 0 10vw 0 10vw;
+        ul{
+            padding: 2px 16px;
+        }
+    }
+
+}
