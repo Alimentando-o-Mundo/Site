@@ -229,7 +229,8 @@ section#produtos ul li img {
 
 section#dados{
     background-color: #CF6123;
-    border-radius: 2vw;
+
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.18);
 
     h2{
         color: #fff;
@@ -247,13 +248,18 @@ section#dados{
         gap: 30px;
         padding: 6vw;
         justify-content: space-around;
+        
 
 
         li{
             background-color: #fff;
             width: 311px;
+            height: 450px;
+
             padding: 2vw 2vw 3.5vw 2vw;
             border-radius: 2vw;
+
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.18);
         
 
             h3{

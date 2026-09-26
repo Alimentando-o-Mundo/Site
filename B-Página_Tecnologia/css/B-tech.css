@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 html {
     font-family: "Poppins", sans-serif; 
+
+    h2{
+        font-family: "Figtree", sans-serif;
+        font-weight: bold;
+    }
 }
 
 
@@ -52,4 +57,325 @@ header div p {
     font-weight: light;
     color: white;
     padding: 0 0 2px 0;
+}
+
+/* === Indrodução */
+
+section#tecAlimento{
+    padding: 3.5vw 6vw;
+
+    h2{
+        font-size: 2.5rem;
+        color: #CF6123;
+        padding-right: 20vw;
+        padding-bottom: 1.5vw;
+    }
+
+    p{
+        color: #3A3531;
+        font-size: 1.2rem;
+        padding: 0 15vw 2vw 0;
+    }
+}
+
+
+/* === TECNOLOGIAS === */
+
+section#tecnologias{
+    background-color: #CF6123;
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.18);
+
+    h2{
+        font-size: 2.5rem;
+        text-align: center;
+        color: #fff;
+        padding: 4vw 0 3vw 0;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0 6vw 3vw;
+        justify-content: space-around;
+        
+        li{
+            background-color: #F7F1E8;
+            width: 400px;
+            height: 520px;
+            padding: 1vw 0.5vw 3.5vw 0.5vw;
+            border-radius: 2vw;
+            text-align: center;
+
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.18);
+
+            img{
+                width: 350px;
+                
+                display: inline-block;
+            }
+
+            h3{
+                color: #CF6123;
+                font-weight: bold;
+                font-size: 1.6rem;
+                padding-top: 15px;
+            }
+
+            p{
+                text-align: left;
+                padding: 1.5vw 0.5vw 0 0.7vw;
+                font-size: 1.2rem;
+                color: #3A3531;
+                
+            }
+        }
+    }
+}
+
+/* === BIOTECNOLOGIA === */
+
+section#bio{
+    background-color: #2F241C;
+    padding: 3vw 6vw;
+
+}
+section#bio h2{
+    color: #CF6123;
+    font-size: 2.5rem;
+    padding: 2vw 0 2vw 0;
+}
+
+section#bio p{
+    color: #F7F1E8;
+    padding: 2vw 0 2vw 0 ;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+/* === BIOTECNOLOGIA === */
+
+section#automacao{
+    display: flex;
+    gap: 60px;
+    padding: 4vw 6vw;
+    justify-content: space-around;
+
+    h2{
+        font-size: 2.5rem;
+        color: #CF6123;
+        padding: 0 0vw 1.5vw;
+        
+    }
+    p{
+        font-size: 1.3rem;
+        color: #3A3531;
+        line-height: 1.5;
+        max-width: 560px;
+        
+    }
+
+    img{
+        width: 455px;
+        
+    }
+}
+
+/* === SUSTENTABILIDADE === */
+
+section#tec-sus{
+    padding: 4vw 6vw 5vw;
+    background-color: #CF6123;
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.18);
+
+    h2{
+        font-size: 2.5rem;
+        color: #fff;
+        padding-top: 1vw;
+        padding-bottom: 2vw;
+    }
+    p{
+        color: #F7F1E8;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    ul{
+        padding: 3vw 0 4vw;
+        display: flex;
+        gap: 20px;
+
+        li{
+            background-color: #F7F1E8;
+            padding: 2vw;
+            border-radius: 24px;
+
+            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.18);
+
+            p{
+                color: #5F4E42;
+                line-height: 1.5;
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+/* === FOOTER === */
+
+footer{
+    background-color: #CF6123;
+    margin-top: 4vw;
+    padding: 25px 8vw 0px;
+
+    position: relative;
+    overflow: hidden;
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        gap: 40px;
+    }
+    
+
+        .geral{
+            width: 35%;
+            
+        }
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img{
+            width: 45px;
+            height: 45px;
+        }
+        h2{
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            
+        }
+        
+    }
+    p{
+        color: #F7F1E8;
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 360px;
+        padding: 12px 0px 0 8px;
+    }
+
+    .mapa{
+        width: 30%;
+        padding-left: 4vw;
+        h2{
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0 0 8px;
+        }
+
+        ul{
+            li{
+                margin-bottom:3px ;
+
+                a{
+                    color: #F7F1E8;
+                    font-size: 1rem;
+                }
+                a:hover{
+                    color:#f7f1e8bd;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .redes{
+        width: 30%;
+
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+        z-index: 2;
+
+        .button-footer div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #F7F1E8;
+
+            /*width: 120px;
+            height: 80px;*/
+            padding: 5px 10px;
+            gap: 5px;
+            border-radius: 6px;
+
+            p{
+                color: #3A3531;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: -13px;
+            }
+        }
+        .button-footer:hover div {
+            background-color: #3a35313f;
+            color: #F7F1E8;
+            transform: translateY(-3px);
+            transition: background-color 0.4s ease,
+                transform 0.4s ease;
+
+        }
+        .button-footer:hover p{
+            color: #F7F1E8;
+            transform: translateY(-3px);
+            transition: color 0.4s ease;
+        }
+        .button-footer:hover img {
+            transform: translateY(-3px);
+        }
+
+        .social-icons a img{
+            padding: 2.5vw 10px 0;
+            
+        }
+    
+    }
+
+    .copyright {
+        background-color: #3A3531;
+        color: #F7F1E8;
+        width: calc(100% + 16vw);
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 7px 0;
+        margin: 20px -8vw 0;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .triangulos-footer{
+        position: absolute;
+
+        width: 400px;
+        height: auto;
+        right: 4%;
+        top: -5px;
+
+        z-index: 1;
+
+        pointer-events: none;
+    }
+
 }
