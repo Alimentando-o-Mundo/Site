@@ -397,8 +397,8 @@ footer{
             transform: translateY(-3px);
         }
 
-        .social-icons img{
-            padding: 2.5vw 10px;
+        .social-icons a img{
+            padding: 2.5vw 10px 0;
             
         }
     
@@ -412,12 +412,15 @@ footer{
         font-size: 0.7rem;
         padding: 7px 0;
         margin: 20px -8vw 0;
+
+        position: relative;
+        z-index: 1;
     }
 
     .triangulos-footer{
         position: absolute;
 
-        width: 368px;
+        width: 400px;
         height: auto;
         right: 4%;
         top: -5px;
