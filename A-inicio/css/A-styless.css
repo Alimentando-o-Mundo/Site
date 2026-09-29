@@ -113,3 +113,30 @@ section#como {
   display: block;
   margin: 0 auto;
 }
+
+footer {
+  background-image: url(../src/footer.png);
+}
+
+footer .left {
+  text-align: left;
+  color: white;
+  h1 {
+    font-weight: bolder;
+  }
+}
+
+footer .middle {
+  text-align: center;
+  color: white;
+  h2 {
+    font-weight: bolder;
+  }
+}
+
+footer .right a img {
+  display: inline-block;
+  margin-right: auto;
+  width: 55px;
+  height: 55px;
+}
