@@ -59,7 +59,15 @@ main {
 .moldura {
   border: 10px solid #cf6123;
   padding: 20px;
-  margin: 15px;
+  margin: 12px 30px 12px 45px;
+  border-radius: 20px;
+  width: 800px;
+  height: 555px;
+}
+
+.firstimg {
+  padding: 20px;
+  margin: 12px 30px 12px 45px;
   border-radius: 20px;
   width: 800px;
   height: 555px;
