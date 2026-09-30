@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Produção de Alimentos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            border-top: 8px solid #2e7d32;
+            position: relative;
+        }
+
+        header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #1b5e20;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-size: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #fafafa;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #2e7d32;
+            background-color: #fff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            accent-color: #2e7d32;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .scale-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            margin-top: 8px;
+        }
+
+        .scale-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .scale-label {
+            font-size: 12px;
+            color: #777;
+            font-style: italic;
+        }
+
+        .error-message {
+            color: #c62828;
+            font-size: 13px;
+            margin-top: 5px;
+            display: none;
+            font-weight: 500;
+        }
+
+        .submit-btn {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #1b5e20;
+        }
+
+        .submit-btn:disabled {
+            background-color: #a5d6a7;
+            cursor: not-allowed;
+        }
+
+        .thank-you-screen {
+            display: none;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .thank-you-screen .icon {
+            font-size: 64px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-screen h2 {
+            color: #1b5e20;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .thank-you-screen p {
+            color: #555;
+            font-size: 16px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .form-container { padding: 20px; }
+            .scale-rating { flex-direction: column; gap: 15px; align-items: flex-start; }
+            .scale-option { flex-direction: row; gap: 15px; }
+            .scale-label { align-self: center; }
+        }
+    </style>
+</head>
+  <body>
+
+    <div class="form-container">
+        <div id="survey-block">
+            <header>
+                <h1>Sua opinião é fundamental!</h1>
+                <p>Ajude-nos a melhorar nossos conteúdos sobre Produção de Alimentos para Grandes Populações e aprimorar nossa plataforma.</p>
+            </header>
+
+            <form id="satisfaction-form" onsubmit="handleFormSubmit(event)">
+                
+                <div class="form-group">
+                    <label for="name">Nome (Opcional)</label>
+                    <input type="text" id="name" name="name" placeholder="Ex: João Silva">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail (Opcional)</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: joao@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="frequency">Com que frequência você visita nosso site?</label>
+                    <select id="frequency" name="frequency" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="Diariamente">Diariamente</option>
+                        <option value="Semanalmente">Semanalmente</option>
+                        <option value="Mensalmente">Mensalmente</option>
+                        <option value="Primeira Visita">É a minha primeira visita</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Como você avalia a qualidade e clareza dos textos informativos (Produção em Massa, Logística, Sustentabilidade)?</label>
+                    <div class="scale-rating">
+                        <span class="scale-label">Muito Ruim</span>
+                        <div class="scale-option">
+                            <input type="radio" id="content-1" name="content_rating" value="1" required>
+                            <label for="content-1">1</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="content-2" name="content_rating" value="2">
+                            <label for="content-2">2</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="content-3" name="content_rating" value="3">
+                            <label for="content-3">3</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="content-4" name="content_rating" value="4">
+                            <label for="content-4">4</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="content-5" name="content_rating" value="5">
+                            <label for="content-5">5</label>
+                        </div>
+                        <span class="scale-label">Excelente</span>
+                    </div>
+                    <div class="error-message" id="error-content">Por favor, selecione uma nota para os textos informativos.</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Em relação ao nosso Quiz Interativo, qual nota você daria para o nível do desafio e aprendizado?</label>
+                    <div class="scale-rating">
+                        <span class="scale-label">Fraco</span>
+                        <div class="scale-option">
+                            <input type="radio" id="quiz-1" name="quiz_rating" value="1" required>
+                            <label for="quiz-1">1</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="quiz-2" name="quiz_rating" value="2">
+                            <label for="quiz-2">2</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="quiz-3" name="quiz_rating" value="3">
+                            <label for="quiz-3">3</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="quiz-4" name="quiz_rating" value="4">
+                            <label for="quiz-4">4</label>
+                        </div>
+                        <div class="scale-option">
+                            <input type="radio" id="quiz-5" name="quiz_rating" value="5">
+                            <label for="quiz-5">5</label>
+                        </div>
+                        <span class="scale-label">Incrível</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Quais tópicos mais chamaram sua atenção? (Selecione todos que se aplicam)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="topics" value="Produção de Alimentos em Larga Escala"> Produção de Alimentos em Larga Escala
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="topics" value="Logística e Cadeia de Distribuição"> Logística e Cadeia de Distribuição
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="topics" value="Desafios da Sustentabilidade"> Desafios da Sustentabilidade
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Deseja deixar alguma sugestão ou comentário para melhorarmos?</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" placeholder="Escreva aqui suas ideias..."></textarea>
+                </div>
+
+                <div id="error-message" class="error-message" style="color: #c62828; font-size: 13px; margin-top: 5px; display: none; font-weight: 500;">
+                    Desculpe, ocorreu um erro ao enviar. Tente novamente.
+                </div>
+
+                <button type="submit" id="submit-btn" class="submit-btn">Enviar Respostas</button>
+            </form>
+        </div>
+
+        <div id="thank-you-block" class="thank-you-screen">
+            <div class="icon">✓</div>
+            <h2>Muito obrigado!</h2>
+            <p>Suas respostas foram registradas com sucesso. Agradecemos imensamente o tempo dedicado para nos ajudar a evoluir.</p>
+        </div>
+    </div>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            // Link do seu Web App inserido corretamente aqui:
+            const url = "https://google.com";
+
+            const btn = document.getElementById('submit-btn');
+            const errorMsg = document.getElementById('error-message');
+            const form = event.target;
+            
+            btn.disabled = true;
+            btn.innerText = "Enviando...";
+            errorMsg.style.display = 'none';
+
+            const formData = new FormData(form);
+            
+            // Junta as caixas de seleção em um único texto separado por vírgula
+            const checkedTopics = [];
+            document.querySelectorAll('input[name="topics"]:checked').forEach((checkbox) => {
+                checkedTopics.push(checkbox.value);
+            });
+
+            // Codifica os dados no padrão de formulário aceito pelo Google
+            const searchParams = new URLSearchParams();
+            formData.forEach((value, key) => {
+                if (key !== 'topics') {
+                    searchParams.append(key, value);
+                }
+            });
+            searchParams.append('topics', checkedTopics.length > 0 ? checkedTopics.join(', ') : 'Nenhum selecionado');
+
+            fetch(url, {
+                method: "POST",
+                mode: "no-cors", 
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: searchParams.toString()
+            })
+            .then(() => {
+                document.getElementById('survey-block').style.display = 'none';
+                document.getElementById('thank-you-block').style.display = 'block';
+            })
+            .catch((error) => {
+                console.error("Erro no envio:", error);
+                btn.disabled = false;
+                btn.innerText = "Enviar Respostas";
+                errorMsg.style.display = 'block';
+            });
+        }
+    </script>
+</body>
