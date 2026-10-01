@@ -3,208 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scr/reset.css">
+    <link rel="stylesheet" href="scr/pesquisa.css">
+    <link rel="stylesheet" href="scr/nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="script.js"></script>
+
+    
     <title>Pesquisa de Satisfação - Produção de Alimentos</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f7f5;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .form-container {
-            background-color: #ffffff;
-            max-width: 650px;
-            width: 100%;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-            border-top: 8px solid #2e7d32;
-            position: relative;
-        }
-
-        header {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            color: #1b5e20;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            color: #666;
-            font-size: 14px;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #2c3e50;
-            font-size: 15px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #cccccc;
-            border-radius: 6px;
-            font-size: 14px;
-            background-color: #fafafa;
-            transition: all 0.3s ease;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #2e7d32;
-            background-color: #fff;
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
-        }
-
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 5px;
-        }
-
-        .checkbox-option {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        input[type="checkbox"], input[type="radio"] {
-            accent-color: #2e7d32;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        .scale-rating {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            margin-top: 8px;
-        }
-
-        .scale-option {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5px;
-            font-size: 12px;
-            color: #555;
-        }
-
-        .scale-label {
-            font-size: 12px;
-            color: #777;
-            font-style: italic;
-        }
-
-        .error-message {
-            color: #c62828;
-            font-size: 13px;
-            margin-top: 5px;
-            display: none;
-            font-weight: 500;
-        }
-
-        .submit-btn {
-            background-color: #2e7d32;
-            color: white;
-            border: none;
-            padding: 14px 20px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.2s ease, transform 0.1s ease;
-            margin-top: 10px;
-        }
-
-        .submit-btn:hover {
-            background-color: #1b5e20;
-        }
-
-        .submit-btn:disabled {
-            background-color: #a5d6a7;
-            cursor: not-allowed;
-        }
-
-        .thank-you-screen {
-            display: none;
-            text-align: center;
-            padding: 20px 0;
-            animation: fadeIn 0.5s ease forwards;
-        }
-
-        .thank-you-screen .icon {
-            font-size: 64px;
-            color: #2e7d32;
-            margin-bottom: 20px;
-        }
-
-        .thank-you-screen h2 {
-            color: #1b5e20;
-            font-size: 26px;
-            margin-bottom: 12px;
-        }
-
-        .thank-you-screen p {
-            color: #555;
-            font-size: 16px;
-            max-width: 450px;
-            margin: 0 auto;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 480px) {
-            .form-container { padding: 20px; }
-            .scale-rating { flex-direction: column; gap: 15px; align-items: flex-start; }
-            .scale-option { flex-direction: row; gap: 15px; }
-            .scale-label { align-self: center; }
-        }
-    </style>
 </head>
   <body>
+    <header> <!--NAV (copiar e colar em todas as paginas!)-->
+        <section id="nav-bar">
+        <a href="index.html" class="logo"><img src="scr/logo-v2.png" alt="logo"></a>
+            <nav id="nav_bar">
+                <ul class="menu">
+                    <li>
+                        <a href="../A-inicio/A-index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="../Site/B-Página_Tecnologia/B-tec.html">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="../Site/C-agricultura_lg_escala/C-agricultura.html">Agricultura em Larga Escala</a>
+                    </li>
+                    <li>
+                        <a href="../Site/D-sustentabilidade/D-sustentabilidade.html">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="../Site/E-Página_Pecuária/E-pecuaria.html">Pecuária e Produção de Proteína</a>
+                    </li>
+                    <li>
+                        <a href="#">Desafios na Produção</a>
+                    </li>
+                    <li>
+                        <a href="../Site/F-Quiz/quiz.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="../G-Sobre_Nos/G-sobre.html">Sobre nós</a>
+                    </li>
+                </ul>
+            </nav>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        </section> <!--FIM DA NAV-->
+
 
     <div class="form-container">
         <div id="survey-block">
