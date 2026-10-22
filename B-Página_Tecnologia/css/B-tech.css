@@ -76,6 +76,10 @@ section#tecAlimento{
         font-size: 1.2rem;
         padding: 0 15vw 2vw 0;
     }
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -140,6 +144,10 @@ section#bio{
     background-color: #2F241C;
     padding: 3vw 6vw;
 
+    img{
+        width: 100%;
+        height: 50%;
+    }
 }
 section#bio h2{
     color: #CF6123;
