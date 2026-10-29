@@ -8,7 +8,7 @@ html{
 /* === HEADER === */
 header{
     height: 750px;
-    background-image: url("banner.png");
+    background-image: url("../img/banner-agri.png");
     background-size: cover;
     background-position: center;
     position: relative;
