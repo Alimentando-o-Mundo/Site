@@ -6,7 +6,7 @@ html {
 
 header{
     height: 750px;
-    background-image: url("../src/img.png");
+    background-image: url("../img/img.png");
     background-size: cover;
     background-position: center;
     position: relative;
