@@ -60,7 +60,7 @@ main {
 
 .firstimg {
   padding: 20px;
-  margin: 12px 30px 12px 45px;
+  margin: 12px 35px 12px auto;
   border-radius: 20px;
   width: 800px;
   height: 555px;
@@ -69,18 +69,21 @@ main {
 .moldura h2 {
   font-size: 35px;
   font-weight: 500;
+  margin: 12px 0px 12px 30px;
 }
 
 .moldura h3 {
   color: #cf6123;
   font-size: 25px;
   font-weight: 600;
+  margin: 12px 0px 12px 30px;
 }
 
 .moldura p {
   font-size: 19px;
-  width: 605px;
+  width: 641px;
   height: 290px;
+  margin: 12px auto auto 35px;
 }
 
 section#como {
