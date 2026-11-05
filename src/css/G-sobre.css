@@ -107,7 +107,7 @@ section.time ul li {
 
 section.time ul li img {
     width: 100%;
-    height: 250px;
+    height: 320px;
     object-fit: cover;
     display: block;
 }
