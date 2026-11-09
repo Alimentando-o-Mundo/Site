@@ -4,6 +4,23 @@ html {
   font-family: "Poppins", sans-serif; 
 }
 
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    position: relative;
+    z-index: 1001;
+}
+
+#pesquisa {
+    position: relative;
+    z-index: 1;
+}
+
 
 
 * {
@@ -17,36 +34,36 @@ html {
             background-color: #f5ead7;
             color: #333;
             line-height: 1.6;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            padding: 0;
             min-height: 100vh;
+            display: block;
         }
 
         .form-container {
             background-color: #ffffff;
             max-width: 650px;
-            width: 100%;
+            width: calc(100% - 40px);
             padding: 40px;
+            margin: 40px auto;
             border-radius: 12px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-            border-top: 8px solid #cf6123;
+            border-top: 8px solid #CF6123;
             position: relative;
         }
 
-        header {
+        .header {
             margin-bottom: 30px;
             text-align: center;
         }
 
-        header h1 {
+        .header h1 {
             color: #CF6123;
             font-size: 24px;
             margin-bottom: 10px;
         }
 
-        header p {
+        .header p {
             color: #666;
             font-size: 14px;
         }
