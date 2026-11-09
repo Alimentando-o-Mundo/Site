@@ -70,3 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     atualizarCarrossel();
 
 });
+
+function quantidadeVisivel() {
+    return window.innerWidth <= 600 ? 1 : 2;
+}

@@ -265,7 +265,7 @@ section#produtos h2 span {
 .seta {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     border: none;
     background: #bd5326b6;
@@ -521,3 +521,329 @@ footer{
 
 }
 
+
+
+
+/* =================================
+   RESPONSIVIDADE - CELULARES
+   Até 600px
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* === GERAL === */
+
+    html {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* === HEADER === */
+
+    header {
+        height: 450px;
+        background-position: center;
+    }
+
+    header div {
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        height: 340px;
+        padding: 20px 10px;
+
+        border-radius: 20px;
+    }
+
+    header div h1 {
+        font-size: clamp(3rem, 13vw, 5rem);
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    header div h2 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin-top: -20px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    header div p {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        text-align: center;
+    }
+
+
+    /* === COMO FUNCIONA === */
+
+    section#oque h2 {
+        font-size: 2rem;
+        padding: 50px 15px 25px;
+    }
+
+    section#oque p {
+        font-size: 1rem;
+        padding: 0 7vw 40px;
+        text-align: justify;
+    }
+
+
+    /* === COMO === */
+
+    section#como h3 {
+        font-size: 1.8rem;
+        padding: 25px 7vw;
+    }
+
+    section#como li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#como li h4 {
+        font-size: 1.4rem;
+        padding: 20px 7vw 10px;
+    }
+
+    section#como li p {
+        font-size: 1rem;
+        padding: 10px 7vw 25px;
+        text-align: justify;
+    }
+
+    section#como li div.esquerda {
+        padding: 0 5vw;
+        width: 100%;
+    }
+
+    section#como li div.img-direita {
+        padding: 0 5vw;
+        width: 100%;
+    }
+
+    #como img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+
+    /* === VANTAGENS === */
+
+    section#vantagens {
+        margin: 30px 15px;
+        border-radius: 25px;
+        padding-bottom: 20px;
+    }
+
+    section#vantagens h2 {
+        font-size: 1.8rem;
+        padding: 30px 15px;
+    }
+
+    section#vantagens ul.vantagen-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 15px 20px;
+    }
+
+    section#vantagens ul.vantagen-ul li {
+        width: 100%;
+        padding: 0;
+    }
+
+    section#vantagens ul.vantagen-ul h3 {
+        font-size: 1.2rem;
+    }
+
+    section#vantagens ul.vantagen-ul p {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+
+    /* === PRODUTOS === */
+
+    section#produtos {
+        padding: 20px 15px 60px;
+    }
+
+    section#produtos h2 {
+        font-size: 2rem;
+        padding: 30px 0 15px;
+        margin-bottom: 20px;
+    }
+
+    section#produtos h3 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    .carrossel {
+        width: 100%;
+        max-width: 400px;
+        margin: 25px auto;
+    }
+
+    .janela {
+        width: 100%;
+        margin: 0 15px;
+    }
+
+    #produtos .container {
+        gap: 15px;
+    }
+
+    #produtos .slide {
+        flex: 0 0 100%;
+        min-width: 0;
+    }
+
+    #produtos .slide img {
+        width: 350px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    #produtos .slide p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+
+    .seta {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .esquerda {
+        left: -10px;
+    }
+
+    .direita {
+        right: -10px;
+    }
+
+
+    /* === DADOS === */
+
+    section#dados h2 {
+        font-size: 1.8rem;
+        padding: 35px 15px;
+    }
+
+    section#dados ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    section#dados ul li {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 250px;
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    section#dados ul li h3 {
+        font-size: 1.2rem;
+    }
+
+    section#dados ul li p {
+        font-size: 1rem;
+    }
+
+
+    /* === FOOTER === */
+
+    footer {
+        padding: 30px 7vw 0;
+        margin-top: 30px;
+    }
+
+    footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    footer .geral,
+    footer .mapa,
+    footer .redes {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer .titulo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        padding: 12px 0;
+        margin: 0 auto;
+    }
+
+    footer .mapa h2 {
+        font-size: 1.3rem;
+    }
+
+    footer .mapa ul {
+        list-style: none;
+    }
+
+    footer .redes {
+        min-height: auto;
+    }
+
+    footer .social-icons a img {
+        padding: 20px 8px 0;
+    }
+
+    footer .copyright {
+        width: calc(100% + 14vw);
+        margin: 25px -7vw 0;
+        font-size: 0.65rem;
+        padding: 10px 5px;
+    }
+
+    footer .triangulos-footer {
+        width: 220px;
+        right: -30px;
+        top: 30px;
+    }
+
+}
