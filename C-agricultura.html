@@ -11,6 +11,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
     <script src="src/js/script.js"></script>
+    <script src="src/js/carrosel.js"></script>
     <title>Alimentando o Mundo</title>
 </head>
 <body>
@@ -173,37 +174,44 @@
             </ul>
         </section>
         <section id="produtos">
+
             <h2><span>Principais Produtos</span></h2>
-            <ul>
-                <li>
-                    <img src="src/img/milho 2.png" alt="">
+           <div class="carrossel">
+        <button class="seta esquerda" id="anterior">&#10094;</button>
+
+        <div class="janela">
+            <div class="container" id="img">
+
+                <div class="slide">
+                    <img src="src/img/milho.sla 1.png" alt="Milho">
                     <h3><span>Milho</span></h3>
-                    <p>
-                        Importante para alimentação humana e animal.
-                    </p>
-                </li>
-                <li>
-                    <img src="src/img/soja 1.png" alt="">
-                    <h3><Span>Soja</Span></h3>
-                    <p>
-                            Utilizada principalmente para produção de alimentos, ração e óleo.
-                    </p>
-                </li>
-                <li>
-                    <img src="src/img/arroz 1.png" alt="">
+                    <p>O trigo é um dos cereais mais importantes do mundo, usado na produção de pães, massas, bolos e rações animais.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="src/img/soja-aura.png" alt="Soja">
+                    <h3><span>Soja</span></h3>
+                    <p>A soja é utilizada na produção de óleo, alimentos e ração animal. É rica em proteínas e tem grande importância na agricultura mundial.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="src/img/arroz-aura.png" alt="Arroz">
                     <h3><span>Arroz</span></h3>
-                    <p>
-                        Um dos alimentos básicos mais consumidos no mundo.
-                    </p>
-                </li>
-                <li>
-                    <img src="src/img/trigo 1.png" alt="">
+                    <p>O arroz é um dos alimentos básicos mais consumidos no mundo, sendo essencial na alimentação de bilhões de pessoas.</p>
+                </div>
+
+                <div class="slide">
+                    <img src="src/img/trigo-aura.png" alt="Trigo">
                     <h3><span>Trigo</span></h3>
-                    <p>
-                        Um dos principais cereais utilizados na alimentação humana.
-                    </p>
-                </li>
-            </ul>
+                    <p>O trigo é um dos principais cereais cultivados no mundo, sendo utilizado na produção de pães, massas e farinhas.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="seta direita" id="proximo">&#10095;</button>
+    </div>
+
         </section>
         <section id="dados">
             <h2>
