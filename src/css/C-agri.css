@@ -95,10 +95,7 @@ section#como{
         font-family: "Figtree", sans-serif;
         padding: 2vw 6vw 3.5vw;
     }
-    h3 span{
-        color: #CF6123;
-        border-bottom: 4px solid #CF6123; 
-    }
+
     li{
         display: flex;
         align-items: center;
