@@ -282,3 +282,127 @@ footer{
     }
 
 }
+
+@media screen and (max-width: 600px){
+
+header div h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+header div h2 {
+    font-size: 2rem;
+    margin-top: -35px;
+}
+
+section.texto{
+    padding: 6vw;
+}
+
+section.texto p{
+    font-size: 1.2rem;
+}
+
+section.time{
+    padding: 2vw 3vw 3vw 3vw;
+}
+
+section.time h2{
+    width: 200px;
+}
+
+section.time ul {
+    padding: 9vw;
+}
+
+section.time ul li h3 {
+    font-size: 23px;
+}
+
+section.time ul li p {
+    font-size: 15px;
+}
+
+footer{
+    padding: 25px 8vw 0px;
+    text-align: center;
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .geral{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mapa{
+        width: 100%;
+        padding-left: 0;
+
+        ul{
+            li{
+                a:hover{
+                    color:#F7F1E8;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .redes{
+        width: 100%;
+
+        .button-footer div{
+            p{
+                color: #3A3531;
+                font-weight: bold;
+                font-size: 1.1rem;
+                margin-top: -13px;
+            }
+        }
+        .button-footer:hover div {
+            background-color: #F7F1E8;
+            color: #F7F1E8;
+            transform: translateY(-3px);
+            transition: background-color 0.4s ease,
+                transform 0.4s ease;
+
+        }
+        .button-footer:hover p{
+            color: black;
+            transform: translateY(-3px);
+            transition: color 0.4s ease;
+        }
+        .button-footer:hover img {
+            transform: translateY(-3px);
+        }
+
+        .social-icons a img{
+            padding: 2.5vw 10px 0;
+            
+        }
+    
+    }
+
+    .copyright {
+        background-color: #3A3531;
+        color: #F7F1E8;
+        width: calc(100% + 16vw);
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 7px 0;
+        margin: 20px -8vw 0;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .triangulos-footer{
+        display: none;
+    }
+
+}
+}
