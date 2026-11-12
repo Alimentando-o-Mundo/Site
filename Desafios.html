@@ -1,0 +1,269 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="src/css/Desafios.css">
+        <link rel="stylesheet" href="src/css/nav.css">
+        <link rel="stylesheet" href="src/css/reset.css">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
+        <script src="src/js/script.js"></script>
+        <script src="src/js/desafio.js"></script>
+        <title>Alimentando o Mundo</title>
+    </head>
+
+    <body>
+        <header>
+            <section id="nav-bar">
+            <a href="index.html" class="logo"><img src="src/img/logo-v2.png" alt="logo"></a>
+                <nav id="nav_bar">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li>
+                            <a href="B-tec.html">Tecnologia</a>
+                        </li>
+                        <li>
+                            <a href="C-agricultura.html">Agricultura em Larga Escala</a>
+                        </li>
+                        <li>
+                            <a href="D-sustentabilidade.html">Sustentabilidade</a>
+                        </li>
+                        <li>
+                            <a href="Desafios.html">Desafios na Produção</a>
+                        </li>
+                        <li>
+                            <a href="quiz.html">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="G-sobre.html">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
+                        </li>
+                    </ul>
+                </nav>
+                <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            </section> <!--FIM DA NAV-->
+            <div class="banner">
+                <h1>Desafio</h1>
+                <h2>Na Produção</h2>
+                <p>° º º</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="crescimento">
+                <div>
+                    <h2 class="texto-pricipal">
+                        Crescimento Populacional
+                    </h2>
+                    <h3>
+                        A produção de alimentos precisa crescer 70% até 2050
+                    </h3>
+                    <p>
+                        Segundo a FAO, a população global aumentará, elevando a pressão sobre a produção de alimentos. Isso exige mais eficiência, mais precisão e mais resiliência para garantir qualidade, disponibilidade e sustentabilidade.
+                    </p>
+                    <ul>
+                        <li>
+                            <h4>Meta 2050</h4>
+                            <h5>
+                                +70%
+                            </h5>
+                            <p>
+                                aumento na produção de alimentos
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Área para biocombustíveis</h4>
+                            <h5>
+                                35M
+                            </h5>
+                            <p>
+                                hectares estimados até 2030
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <img src="src/img/crescimento-populac.png" alt="">
+            </section>
+            <section id="clima">
+                <h2 class="texto-pricipal">
+                    Mudanças Climáticas
+                </h2>
+                <h3>
+                    O clima afeta a produção, a água e a segurança alimentar
+                </h3>
+                <p>
+                    A agricultura é a principal fonte de alimentos para a humanidade, mas a produção em larga escala gera impactos ambientais significativos. A poluição da agropecuária, somada a outros fatores industriais, intensificou o aquecimento global. Como consequência, as mudanças climáticas já afetam diretamente a produção de alimentos, ameaçando a segurança alimentar por meio de secas, eventos extremos e perda de produtividade.
+                </p>
+
+                <ul>
+                    <li onclick="clicar(this)">
+                        <div class="textos">
+
+                            <p class="number">
+                                <span>
+                                    1
+                                </span>
+                            </p>
+                            <h4>
+                                Secas e eventos extremos <span>+</span>
+                            </h4>
+                        </div>
+
+                        <div class="resposta">
+                            <p>
+                                Secas prolongadas, enchentes e ondas de calor prejudicam as lavouras, reduzem a produtividade e podem limitar a oferta de alimentos, elevando os preços.
+                            </p>
+                        </div>
+                    </li>
+                    <li onclick="clicar(this)">
+                        <div class="textos">
+
+                            <p class="number">
+                                <span>
+                                    2
+                                </span>
+                            </p>
+                            <h4>
+                                Escassez de água <span>+</span>
+                            </h4>
+                        </div>
+                        <div class="resposta">
+                            <p>
+                                A agricultura e a pecuária respondem por cerca de 70% do consumo de água doce do planeta, tornando a gestão hídrica um dos maiores fatores de risco para a segurança alimentar global.
+                            </p>
+                        </div>
+                    </li>
+                    <li onclick="clicar(this)">
+                        <div class="textos">
+
+                            <p class="number">
+                                <span>
+                                    3
+                                </span>
+                            </p>
+                            <h4>
+                                Pressão sobre a sustentabilidade <span>+</span>
+                            </h4>
+                        </div>
+                        
+                        <div class="resposta">
+                            <p>
+                                A produção em larga escala gera impactos ambientais significativos, desafiando a capacidade do planeta de manter a segurança alimentar de forma sustentável no longo prazo.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="oq-fazer">
+                <img src="src/img/planta mao.png" alt="">
+                <div>
+                    <h2 class="texto-pricipal">
+                        O Que Fazer
+                    </h2>
+                    <h3>
+                        Inovação, responsabilidade e consumo consciente
+                    </h3>
+                    <p>
+                        Para reverter esse cenário, governos e sociedade civil precisam atuar juntos. Financiamentos para agricultura de precisão, sistemas integrados como lavoura-pecuária-floresta e hábitos de consumo mais conscientes podem ajudar a reduzir o impacto ambiental sem comprometer a segurança alimentar.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <p class="number">
+                                <span>
+                                    1
+                                </span>
+                            </p>
+                            <p>
+                                Incentivar a transição para uma agricultura de baixo carbono
+                            </p>
+                        </li>
+                        <li>
+                            <p class="number">
+                                <span>
+                                    2
+                                </span>
+                            </p>
+                            <p>
+                                Adotar hábitos de consumo consciente e combater o desperdício de alimentos
+                            </p>
+                        </li>
+                        <li>
+                            <p class="number">
+                                <span>
+                                    3
+                                </span>
+                            </p>
+                            <p>
+                            Unir inovação tecnológica com responsabilidade ecológica
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+            <footer>
+        
+        <div class="footer-content">
+
+            <div class="geral">
+                <div class="titulo">
+                    <img src="src/img/logo-v2.png" alt="">
+                <h2>Alimentando o Mundo</h2>
+            </div>
+            <p>
+                Produzir para o presente, inovar para o futuro e preservar para as próximas gerações.
+            </p>
+        </div>
+        <div class="mapa">
+            <h2>Mapa da Página</h2>
+            <ul>
+                <li>
+                    <a href="#crescimento">Crescimento Populacional</a>
+                </li>
+                <li>
+                    <a href="#clima">Mudanças Climáticas</a>
+                </li>
+                <li>
+                    <a href="#bio">Biotecnologia</a>
+                </li>
+                <li>
+                    <a href="#oq-fazer">O Que Fazer</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="redes">
+
+            <a href="#" class="button-footer">
+                <div>
+                    <p>Voltar ao topo</p>
+                    <img src="src/img/Frame.png" alt="">
+                </div>
+            </a>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png" alt="Instagram"></a>
+                <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png" alt="GitHub"></a>
+            </div>
+
+        </div>
+    </div>
+
+        <img class="triangulos-footer"
+        src="src/img/back-tri-footer.png"
+        alt="">
+
+        <div class="copyright">
+            © 2026 Alimentando o Mundo. All rights reserved.
+        </div>
+    </footer>
+    </body>
+    </html>
