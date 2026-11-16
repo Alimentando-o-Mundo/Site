@@ -521,11 +521,6 @@ footer{
 
 
 
-/* =================================
-   RESPONSIVIDADE - CELULARES
-   Até 600px
-================================= */
-
 @media screen and (max-width: 600px) {
 
     /* === GERAL === */
@@ -693,7 +688,7 @@ footer{
     }
 
     .carrossel {
-        width: 100%;
+        width: 300px;
         max-width: 400px;
         margin: 25px auto;
     }
@@ -841,6 +836,7 @@ footer{
         width: 220px;
         right: -30px;
         top: 30px;
+        display: none;
     }
 
 }
