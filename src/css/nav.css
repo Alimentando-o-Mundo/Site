@@ -51,10 +51,84 @@ i#burguer:hover{
     
 }
 
-.menu{
+/*.menu{
     display: none;
-}
+}*/
 
 .logo{
     padding: 6px 2vw 0vw 3.5vw;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* NAVBAR FECHADA */
+    section#nav-bar {
+        position: fixed;
+        top: 24px;
+        left: 5%;
+        width: 90%;
+        height: auto;
+
+        background: #CF6223;
+        border-radius: 50px;
+
+        z-index: 1000;
+    }
+
+    /* Esconde os links */
+    section#nav-bar:not(.aberto) nav#nav_bar {
+        display: none;
+    }
+
+    /* SIDEBAR ABERTA */
+    section#nav-bar.aberto {
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+
+        background: #CF6223;
+        border-radius: 0 20px 20px 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    /* Navegação */
+    section#nav-bar.aberto nav#nav_bar {
+        display: flex;
+        width: 100%;
+    }
+
+    /* Links na vertical */
+    section#nav-bar.aberto .menu {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        background: transparent;
+        border-radius: 0;
+
+        padding: 20px;
+    }
+
+    section#nav-bar.aberto li {
+        padding: 15px;
+        text-align: left;
+    }
+
+    section#nav-bar.aberto li:hover {
+        background-color: rgb(255, 126, 67);
+        border-radius: 10px;
+    }
+
+    #burguer {
+        display: block;
+        cursor: pointer;
+        z-index: 1001;
+    }
 }

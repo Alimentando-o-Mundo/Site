@@ -245,8 +245,8 @@ section#produtos h2 span {
 
 .slide img {
     display: block;
-    width: 480px;
-    height: 320px;
+    width: 35vw;
+    height: 23vw;
     object-fit: cover;
 
 }
