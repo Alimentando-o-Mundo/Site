@@ -96,7 +96,7 @@ header div p {
     border-radius: 30px;
     text-align: center;
     color: var(--text-white);
-    backdrop-filter: blur(2px);
+    
 }
 
 .hero-card h1 {

@@ -77,7 +77,7 @@ i#burguer:hover{
         z-index: 1000;
     }
 
-    /* Esconde os links */
+    
     section#nav-bar:not(.aberto) nav#nav_bar {
         display: none;
     }
@@ -89,7 +89,7 @@ i#burguer:hover{
         width: 280px;
         height: 100vh;
 
-        background: #CF6223;
+        background: linear-gradient(to top, #9b3c1b,#b3521ae1 ,#cf6223c9);
         border-radius: 0 20px 20px 0;
 
         display: flex;

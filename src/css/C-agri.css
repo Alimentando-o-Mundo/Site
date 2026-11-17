@@ -519,7 +519,34 @@ footer{
 }
 
 
+@media screen and (max-width: 930px){
 
+    
+    header .banner{
+        height:500px ;
+        h1{
+            font-size: 6rem;
+        }
+
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+
+    section#oque{
+        h2{
+            font-size: 3rem;
+        }
+    }
+
+    footer{
+        background: linear-gradient(to left,#CF6123, #9b3c1b );
+
+        .triangulos-footer{
+            display: none;
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {
 
@@ -575,6 +602,10 @@ footer{
     header div p {
         font-size: clamp(1.5rem, 6vw, 2.5rem);
         text-align: center;
+    }
+
+    .banner{
+        margin: 35px 0 0 0 ;
     }
 
 
@@ -773,6 +804,7 @@ footer{
     footer {
         padding: 30px 7vw 0;
         margin-top: 30px;
+        background: linear-gradient(to left,#CF6123, #9b3c1b );
     }
 
     footer .footer-content {
@@ -817,9 +849,9 @@ footer{
         list-style: none;
     }
 
-    footer .redes {
+    /*footer .redes {
         min-height: auto;
-    }
+    }*/
 
     footer .social-icons a img {
         padding: 20px 8px 0;
