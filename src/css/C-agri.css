@@ -569,6 +569,12 @@ footer{
     }
 
 
+    header {
+        height: 480px;
+        background-position: center;
+    }
+
+
     /* === HEADER === */
 
     header {

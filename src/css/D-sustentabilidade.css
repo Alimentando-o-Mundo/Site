@@ -24,36 +24,52 @@ body {
     margin: 5px 0;
 }
 
-.banner {
-    background-image: url('../img/13\ 1\(2\).png');
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+header {
+  height: 750px;
+  background-image: url("../img/13\ 1\(2\).png") ;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.banner-caixa {
-    background-color: rgba(181, 101, 54, 0.85);
-    padding: 6vw 12vw;
-    border-radius: 20px;
-    text-align: center;
-    color: #fff;
-    border: 2px solid #d9824b;
+header div {
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  right: 5%;
+  height: 600px;
+  background-color: #cf6223c9;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 2;
 }
 
-.banner-caixa h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+header div h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    color: white;
+    padding: 100px 0 0 0;
     font-family: "Figtree", sans-serif;
 }
 
-.banner-caixa h2 {
-    font-size: 28px;
-    font-weight: normal;
-    margin-bottom: 20px;
+header div h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    margin-top: -80px;
+    padding: 0 0 2vw 0;
+    font-family: "Figtree", sans-serif;
+}
+
+header div p {
+    font-size: 64px;
+    font-weight: light;
+    color: white;
+    padding: 0 0 2px 0;
 }
 
 
@@ -343,24 +359,17 @@ footer{
         position: relative;
         z-index: 1;
     }
-
-    .triangulos-footer{
-        position: absolute;
-
-        width: 400px;
-        height: auto;
-        right: 4%;
-        top: -5px;
-
-        z-index: 1;
-
-        pointer-events: none;
+}
+footer {
+        background: linear-gradient(to left, #CF6123, #9b3c1b);
     }
 
-}
+    footer .triangulos-footer {
+        display: none;
+    }
 
 /* RESPONSIVO PARA CELULARES */
-@media (max-width: 768px) {
+@media (max-width:600px) {
 
   
     .topo {
@@ -368,16 +377,38 @@ footer{
     }
 
 
-    .banner-caixa h1 {
-        font-size: 32px;
+    header {
+        height: 480px;
+        background-position: center;
     }
 
-    .banner-caixa h2 {
-        font-size: 20px;
+    header .banner {
+        top: 85px;
+        left: 5%;
+        right: 5%;
+        height: 350px;
+        padding: 20px 15px;
+        border-radius: 20px;
+        margin: 0;
     }
 
-    .banner-caixa {
-        padding: 30px 20px;
+    header .banner h1 {
+        font-size: clamp(2.5rem, 11vw, 3.8rem);
+        padding-top: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header .banner h2 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-top: -15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    header .banner p {
+        font-size: 2rem;
+        text-align: center;
     }
 
     
@@ -385,13 +416,34 @@ footer{
         grid-template-columns: 1fr;
     }
 
-    .rodape {
+    footer .footer-content {
         flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
     }
 
-    .rodape-direita {
-        align-items: flex-start;
+    footer .geral,
+    footer .mapa,
+    footer .redes {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer p {
+        max-width: 100%;
+        padding: 12px 0 0 0;
+    }
+
+    footer .redes {
+        min-height: auto;
+    }
+
+    footer .redes .social-icons {
+        margin-top: 20px;
     }
 }

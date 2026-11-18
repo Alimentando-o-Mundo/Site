@@ -488,6 +488,13 @@ footer{
 
 }
 
+footer {
+        background: linear-gradient(to left, #CF6123, #9b3c1b);
+    }
+
+    footer .triangulos-footer {
+        display: none;
+    }
 
 /* RANKING */
 
@@ -583,5 +590,35 @@ footer{
         display: block;
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer .geral,
+    footer .redes {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer p {
+        max-width: 100%;
+        padding: 12px 0 0 0;
+    }
+
+    footer .redes {
+        min-height: auto;
+    }
+
+    footer .redes .social-icons {
+        margin-top: 20px;
     }
 }
