@@ -62,8 +62,9 @@ main {
   padding: 20px;
   margin: 12px 70px 12px 0px;
   border-radius: 20px;
-  width: 800px;
-  height: 555px;
+  max-width: 800px; 
+  width: 100%; 
+  height: auto;
 }
 
 .moldura h2 {
@@ -81,8 +82,9 @@ main {
 
 .moldura p {
   font-size: 19px;
-  width: 641px;
-  height: 290px;
+  max-width: 641px; 
+  width: 100%; 
+  height: auto;
   margin: 12px 0px auto 70px;
 }
 
@@ -107,8 +109,9 @@ section#como {
 
 #situacao p {
   font-size: 24px;
-  width: 1312px;
-  height: 504px;
+  max-width: 1312px;
+  width: 90%;
+  height: auto;
   text-align: justify;
   margin: 0 auto;
 }
@@ -276,10 +279,10 @@ footer{
 
 /* Responsividade */
 
-@media screen and (max-width: 1024px){
-  
-
+/* --- TABLETS E TELAS MÉDIAS --- */
+@media screen and (max-width: 1024px) {
     header {
+        height: 600px;
         overflow-x: clip;
     }
 
@@ -293,33 +296,82 @@ footer{
         height: auto;
     }
 
-
-  header .banner{
-        height:500px ;
-        h1{
-            font-size: 6rem;
-        }
-
-        h2{
-            font-size: 3.5rem;
-        }
+    header .banner {
+        height: 450px;
     }
-    
+
+    header .banner h1 {
+        font-size: 5rem;
+        padding-top: 60px;
+    }
+
+    header .banner h2 {
+        font-size: 3rem;
+        margin-top: -40px;
+    }
+
+    section#como {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 5%;
+    }
+
+    .moldura h2,
+    .moldura h3 {
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .moldura p {
+        width: 100%;
+        height: auto;
+        margin: 12px 0;
+        text-align: justify;
+    }
+
+    .firstimg {
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        margin: 20px 0 0 0;
+        padding: 0;
+    }
+
+    .firstimg img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
 
 
-    footer{
-        background: linear-gradient(to left,#CF6123, #9b3c1b );
+    #situacao {
+        padding: 0 5%;
+    }
 
-        .triangulos-footer{
-            display: none;
-        }
+    #situacao p {
+        width: 100%;
+        height: auto;
+    }
+
+    #situacao img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(to left, #CF6123, #9b3c1b);
+    }
+
+    footer .triangulos-footer {
+        display: none;
     }
 }
 
+/* --- CELULARES --- */
 @media screen and (max-width: 600px) {
-
-    /* === GERAL === */
-
     html {
         font-size: 14px;
         overflow-x: hidden;
@@ -337,43 +389,91 @@ footer{
     }
 
 
-    /* === HEADER === */
-
     header {
-        height: 650px;
+        height: 480px;
         background-position: center;
     }
 
-    header div {
-        top: 65px;
+    header .banner {
+        top: 85px;
         left: 5%;
         right: 5%;
-        height: 340px;
-        padding: 20px 10px;
-
+        height: 350px;
+        padding: 20px 15px;
         border-radius: 20px;
+        margin: 0;
     }
 
-    header div h1 {
-        font-size: 4rem;
-        padding-top: 35px;
-        text-align: center;
-        margin-top:40px ;
-    }
-
-    header div h2 {
-        font-size: clamp(2rem, 8vw, 3rem);
-        margin-top: -20px;
-        padding-bottom: 15px;
+    header .banner h1 {
+        font-size: clamp(2.5rem, 11vw, 3.8rem);
+        padding-top: 30px;
+        margin-top: 20px;
         text-align: center;
     }
 
-    header div p {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    header .banner h2 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-top: -15px;
+        padding-bottom: 10px;
         text-align: center;
     }
 
-    .banner{
-        margin: 35px 0 0 0 ;
+    header .banner p {
+        font-size: 2rem;
+        text-align: center;
     }
-  }
+
+    .moldura h2 {
+        font-size: 26px;
+    }
+
+    .moldura h3 {
+        font-size: 19px;
+    }
+
+    .moldura p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #situacao h2 {
+        font-size: 28px;
+        padding: 30px 0 15px 0;
+    }
+
+    #situacao p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    footer .geral,
+    footer .mapa,
+    footer .redes {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer p {
+        max-width: 100%;
+        padding: 12px 0 0 0;
+    }
+
+    footer .redes {
+        min-height: auto;
+    }
+
+    footer .redes .social-icons {
+        margin-top: 20px;
+    }
+}
