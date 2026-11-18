@@ -353,12 +353,17 @@ footer{
         z-index: 1;
     }
 
-    footer {
-        background: linear-gradient(to left, #CF6123, #9b3c1b);
-    }
+    .triangulos-footer{
+        position: absolute;
 
-    footer .triangulos-footer {
-        display: none;
+        width: 400px;
+        height: auto;
+        right: 4%;
+        top: -5px;
+
+        z-index: 1;
+
+        pointer-events: none;
     }
 
 }
@@ -370,5 +375,31 @@ footer{
 
     footer .triangulos-footer {
         display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer .geral,
+    footer .mapa,
+    footer .redes {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer p {
+        max-width: 100%;
+        padding: 12px 0 0 0;
+    }
+
+    footer .redes {
+        min-height: auto;
+    }
+
+    footer .redes .social-icons {
+        margin-top: 20px;
     }
 }
