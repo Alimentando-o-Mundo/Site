@@ -12,9 +12,9 @@ body {
 }
 
 
-.topo img, .rodape img {
+/*.topo img, .rodape img {
     height: 40px;
-}
+}*/
 
 .menu-icone span {
     display: block;
@@ -359,15 +359,26 @@ footer{
         position: relative;
         z-index: 1;
     }
+
+    .triangulos-footer{
+        position: absolute;
+
+        width: 400px;
+        height: auto;
+        right: 4%;
+        top: -5px;
+
+        z-index: 1;
+
+        pointer-events: none;
+    }
+
 }
 footer {
         background: linear-gradient(to left, #CF6123, #9b3c1b);
     }
 
-    footer .triangulos-footer {
-        display: none;
-    }
-
+    
 /* RESPONSIVO PARA CELULARES */
 @media (max-width:600px) {
 

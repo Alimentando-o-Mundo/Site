@@ -572,6 +572,8 @@ footer{
     header {
         height: 480px;
         background-position: center;
+
+        
     }
 
 
@@ -592,8 +594,8 @@ footer{
         border-radius: 20px;
     }
 
-    header.banner div h1 {
-        font-size: 4vw;
+    header.banner h1 {
+        font-size: 3vw;
         padding-top: 10px;
         text-align: center;
     }
