@@ -215,7 +215,7 @@ section#produtos h2 span {
 
 .carrossel {
     width: 100%;
-    max-width: 1050px;
+    max-width: 1250px;
     margin: 40px auto;
     position: relative;
     display: flex;
@@ -363,7 +363,7 @@ section#dados{
 /* === FOOTER === */
 
 footer{
-    background-color: #CF6123;
+    background: linear-gradient(to left,#CF6123, #9b3c1b );
     margin-top: 4vw;
     padding: 25px 8vw 0px;
 
@@ -578,7 +578,7 @@ footer{
     /* === HEADER === */
 
     header {
-        height: 450px;
+        height: 650px;
         background-position: center;
     }
 
@@ -592,9 +592,9 @@ footer{
         border-radius: 20px;
     }
 
-    header div h1 {
-        font-size: clamp(3rem, 13vw, 5rem);
-        padding-top: 35px;
+    header.banner div h1 {
+        font-size: 4vw;
+        padding-top: 10px;
         text-align: center;
     }
 

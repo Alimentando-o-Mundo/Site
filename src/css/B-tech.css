@@ -233,7 +233,7 @@ section#tec-sus{
 /* === FOOTER === */
 
 footer{
-    background-color: #CF6123;
+    background: linear-gradient(to left,#CF6123, #9b3c1b );
     margin-top: 4vw;
     padding: 25px 8vw 0px;
 
@@ -375,7 +375,7 @@ footer{
 
     .triangulos-footer{
         position: absolute;
-
+        
         width: 400px;
         height: auto;
         right: 4%;
@@ -390,7 +390,7 @@ footer{
 
 /* Responsividade */
 
-/* --- TABLETS E TELAS MÉDIAS --- */
+
 @media screen and (max-width: 1024px) {
     header {
         height: 600px;
@@ -461,7 +461,7 @@ footer{
         height: 350px;
         padding: 20px 15px;
         border-radius: 20px;
-        margin: 0;
+        margin: 20px 0 0 0;
     }
 
     header div h1 {
@@ -483,5 +483,75 @@ footer{
         align-items: center;
         gap: 24px;
         padding: 32px 20px;
+    }
+
+        footer {
+        padding: 30px 7vw 0;
+        margin-top: 30px;
+        background: linear-gradient(to left,#CF6123, #9b3c1b );
+    }
+
+    footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    footer .geral,
+    footer .mapa,
+    footer .redes {
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .titulo {
+        justify-content: center;
+    }
+
+    footer .titulo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer .titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        padding: 12px 0;
+        margin: 0 auto;
+    }
+
+    footer .mapa h2 {
+        font-size: 1.3rem;
+    }
+
+    footer .mapa ul {
+        list-style: none;
+    }
+
+    /*footer .redes {
+        min-height: auto;
+    }*/
+
+    footer .social-icons a img {
+        padding: 20px 8px 0;
+    }
+
+    footer .copyright {
+        width: calc(100% + 14vw);
+        margin: 25px -7vw 0;
+        font-size: 0.65rem;
+        padding: 10px 5px;
+    }
+
+    footer .triangulos-footer {
+        width: 220px;
+        right: -30px;
+        top: 30px;
+        display: none;
     }
 }

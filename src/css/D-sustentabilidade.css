@@ -220,7 +220,7 @@ header div p {
 }
 
 footer{
-    background-color: #CF6123;
+    background: linear-gradient(to left,#CF6123, #9b3c1b );
     margin-top: 4vw;
     padding: 25px 8vw 0px;
 

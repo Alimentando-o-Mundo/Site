@@ -4,32 +4,38 @@ html {
   font-family: "Poppins", sans-serif; 
 }
 
-header {
-  height: 750px;
-  background-image: url("../img/img.png") ;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+header,
+nav,
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+header{
+    height: 750px;
+    background-image: url("../img/img.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-header div {
-  position: absolute;
-  top: 100px;
-  left: 5%;
-  right: 5%;
-  height: 600px;
-  background-color: #cf6223c9;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 25px;
-  z-index: 2;
+header div{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    right: 5%;
+    height: 600px;
+    background-color:  #cf6223c9;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 2;
 }
 
 header div h1 {
-    font-size: 8rem;
+    font-size: 8.5rem;
     font-weight: bold;
     color: white;
     padding: 100px 0 0 0;
@@ -37,10 +43,10 @@ header div h1 {
 }
 
 header div h2 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 400;
     color: white;
-    margin-top: -80px;
+    margin-top: -45px;
     padding: 0 0 2vw 0;
     font-family: "Figtree", sans-serif;
 }
@@ -122,7 +128,7 @@ section#como {
 }
 
 footer{
-    background-color: #CF6123;
+    background: linear-gradient(to left,#CF6123, #9b3c1b );
     margin-top: 4vw;
     padding: 25px 8vw 0px;
 
@@ -401,7 +407,7 @@ footer{
         height: 350px;
         padding: 20px 15px;
         border-radius: 20px;
-        margin: 0;
+        margin-top: 20px;
     }
 
     header .banner h1 {
