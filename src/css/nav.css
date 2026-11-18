@@ -63,7 +63,7 @@ i#burguer:hover{
 
 @media screen and (max-width: 1024px) {
 
-    /* NAVBAR FECHADA */
+    /* nav fehada */
     section#nav-bar {
         position: fixed;
         top: 24px;
@@ -77,12 +77,12 @@ i#burguer:hover{
         z-index: 1000;
     }
 
-    
+    /* se a nav nao estiver aberta, esconde o elemento */
     section#nav-bar:not(.aberto) nav#nav_bar {
         display: none;
     }
 
-    /* SIDEBAR ABERTA */
+    /* side bar aberta */
     section#nav-bar.aberto {
         top: 0;
         left: 0;
@@ -98,13 +98,13 @@ i#burguer:hover{
         align-items: stretch;
     }
 
-    /* Navegação */
+    /* navegação */
     section#nav-bar.aberto nav#nav_bar {
         display: flex;
         width: 100%;
     }
 
-    /* Links na vertical */
+    /* links na vertical */
     section#nav-bar.aberto .menu {
         display: flex;
         flex-direction: column;

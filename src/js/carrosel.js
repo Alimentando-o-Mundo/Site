@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         atualizarCarrossel();
     };
 
-    //ocorre as atualizaçoes
+    //ocorre as atualizaçoes do carrosel
     window.addEventListener("resize", atualizarCarrossel);
 
     atualizarCarrossel();

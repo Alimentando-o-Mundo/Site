@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const aberto = menu.classList.toggle('aberto');
 
+
+        //operador ternario onde acontece a bertura e o echamento 
         nav.style.display = aberto ? 'flex' : 'none';
 
         burguer.textContent = aberto ? 'close' : 'menu';
