@@ -422,18 +422,25 @@ footer{
 }
 
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 1024px){
+    header {
+        height: 600px;
+        overflow-x: clip;
+    }
 
-    
-    header .banner{
-        height:500px ;
-        h1{
-            font-size: 6rem;
-        }
 
-        h2{
-            font-size: 3.5rem;
-        }
+    header div {
+        height: 450px;
+    }
+
+    header div h1 {
+        font-size: 5rem;
+        padding-top: 60px;
+    }
+
+    header div h2 {
+        font-size: 3rem;
+        margin-top: -40px;
     }
 
 
@@ -444,12 +451,11 @@ footer{
             display: none;
         }
     }
+
 }
 
+
 @media screen and (max-width: 600px) {
-
-    /* === GERAL === */
-
     html {
         font-size: 14px;
         overflow-x: hidden;
@@ -472,47 +478,29 @@ footer{
         background-position: center;
     }
 
-
-    /* === HEADER === */
-
-    header {
-        height: 650px;
-        background-position: center;
-    }
-
     header div {
-        top: 65px;
+        top: 85px;
         left: 5%;
         right: 5%;
-        height: 340px;
-        padding: 20px 10px;
-
+        height: 350px;
+        padding: 20px 15px;
         border-radius: 20px;
+        margin: 20px 0 0 0;
     }
 
-    header.banner div h1 {
-        font-size: 4vw;
-        padding-top: 10px;
+    header div h1 {
+        font-size: clamp(2.5rem, 11vw, 3.8rem);
+        padding-top: 30px;
+        margin-top: 20px;
         text-align: center;
     }
 
     header div h2 {
-        font-size: clamp(2rem, 8vw, 3rem);
-        margin-top: -20px;
-        padding-bottom: 15px;
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-top: -15px;
+        padding-bottom: 10px;
         text-align: center;
     }
-
-    header div p {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
-        text-align: center;
-    }
-
-    .banner{
-        margin: 35px 0 0 0 ;
-    }
-
-
     footer {
         padding: 30px 7vw 0;
         margin-top: 30px;
@@ -553,6 +541,26 @@ footer{
         margin: 0 auto;
     }
 
+    
+    header .banner{
+        height:500px ;
+        h1{
+            font-size: 6rem;
+        }
+
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+
+
+    footer{
+        background: linear-gradient(to left,#CF6123, #9b3c1b );
+
+        .triangulos-footer{
+            display: none;
+        }
+    }
     footer .mapa h2 {
         font-size: 1.3rem;
     }
@@ -584,82 +592,17 @@ footer{
     }
 }
 
-@media (max-width: 600px) {
-  header {
-    height: 440px;
-  }
 
-  header .banner {
-    height: 310px;
-    top: 85px;
-    left: 4%;
-    right: 4%;
-    border-radius: 20px;
-    padding: 0 15px;
-  }
+@media screen and (min-width: 601px) and (max-width: 1024px) {
 
-  header .banner h1 {
-    padding-top: 45px;
-  }
+    header > #nav-bar:not(.aberto) {
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 0;
+        left: 5vw;
+        right: auto;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-  header .banner h2 {
-    margin-top: -10px;
-  }
-
-  #crescimento,
-  #clima,
-  #oq-fazer {
-    padding: 40px 20px;
-    gap: 30px;
-  }
-  #crescimento div ul {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  #crescimento div ul li {
-    width: 100%;
-    min-height: auto;
-  }
-
-  .number {
-    padding: 20px 10px 20px 16px;
-  }
-
-  .number span {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-
-  #clima li h4 {
-    font-size: 18px;
-    padding-right: 16px;
-  }
-
-  #oq-fazer ul li {
-    border-radius: 18px;
-    margin: 14px 0;
-  }
-
-  #oq-fazer ul li p:last-child {
-    font-size: 16px;
-    padding: 16px 16px 16px 6px;
-  }
-
-  footer .footer-content {
-    flex-direction: column;
-    gap: 28px;
-  }
-
-  footer .geral,
-  footer .mapa,
-  footer .redes {
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  footer .redes {
-    flex-direction: column;
-    gap: 20px;
-  }
 }

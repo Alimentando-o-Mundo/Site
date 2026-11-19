@@ -845,6 +845,26 @@ footer{
         margin: 0 auto;
     }
 
+    
+    header .banner{
+        height:500px ;
+        h1{
+            font-size: 6rem;
+        }
+
+        h2{
+            font-size: 3.5rem;
+        }
+    }
+
+
+    footer{
+        background: linear-gradient(to left,#CF6123, #9b3c1b );
+
+        .triangulos-footer{
+            display: none;
+        }
+    }
     footer .mapa h2 {
         font-size: 1.3rem;
     }
