@@ -522,17 +522,34 @@ footer{
 @media screen and (max-width: 930px){
 
     
-    header .banner{
-        height:500px ;
-        h1{
-            font-size: 6rem;
-        }
-
-        h2{
-            font-size: 3.5rem;
-        }
+    header {
+        height: 600px;
+        overflow-x: clip;
     }
 
+    header > #nav-bar {
+        box-sizing: border-box;
+        max-width: 90%;
+    }
+
+    header > #nav-bar .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header div {
+        height: 450px;
+    }
+
+    header div h1 {
+        font-size: 5rem;
+        padding-top: 60px;
+    }
+
+    header div h2 {
+        font-size: 3rem;
+        margin-top: -40px;
+    }
     section#oque{
         h2{
             font-size: 3rem;
@@ -549,9 +566,6 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
-
-    /* === GERAL === */
-
     html {
         font-size: 14px;
         overflow-x: hidden;
@@ -572,48 +586,30 @@ footer{
     header {
         height: 480px;
         background-position: center;
-
-        
-    }
-
-
-    /* === HEADER === */
-
-    header {
-        height: 650px;
-        background-position: center;
     }
 
     header div {
-        top: 65px;
+        top: 85px;
         left: 5%;
         right: 5%;
-        height: 340px;
-        padding: 20px 10px;
-
+        height: 350px;
+        padding: 20px 15px;
         border-radius: 20px;
+        margin: 20px 0 0 0;
     }
 
-    header.banner h1 {
-        font-size: 3vw;
-        padding-top: 10px;
+    header div h1 {
+        font-size: 4.5rem;
+        padding-top: 30px;
+        margin-top: 20px;
         text-align: center;
     }
 
     header div h2 {
-        font-size: clamp(2rem, 8vw, 3rem);
-        margin-top: -20px;
-        padding-bottom: 15px;
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        margin-top: -15px;
+        padding-bottom: 10px;
         text-align: center;
-    }
-
-    header div p {
-        font-size: clamp(1.5rem, 6vw, 2.5rem);
-        text-align: center;
-    }
-
-    .banner{
-        margin: 35px 0 0 0 ;
     }
 
 
