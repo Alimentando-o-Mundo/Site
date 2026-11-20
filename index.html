@@ -1,86 +1,121 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="src/css/reset.css">
-        <link rel="stylesheet" href="src/css/A-styless.css">
-        <link rel="stylesheet" href="src/css/nav.css">
-        <link rel="stylesheet" href="src/css/reveal.css">
+<!DOCTYPE html>
+<html lang="pt-br">
 
-        <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
-        <script src="src/js/script.js"></script>
-        <title>Alimentando o Mundo</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/A-styless.css">
+    <link rel="stylesheet" href="src/css/nav.css">
+    <link rel="stylesheet" href="src/css/reveal.css">
+
+    <!-- teste -->
+    <style>
+        .reveal {
+            opacity: 0 !important;
+            transform: translateY(28px) !important;
+            transition: opacity 650ms ease, transform 650ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+            transition-delay: var(--delay, 0ms) !important;
+        }
+
+        .reveal.is-visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    </style>
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
+    <script src="src/js/script.js"></script>
+    <title>Alimentando o Mundo</title>
+</head>
+
+<body>
     <header>
-            <section id="nav-bar">
+        <section id="nav-bar">
             <a href="index.html" class="logo"><img src="src/img/logo-v2.png" alt="logo"></a>
-                <nav id="nav_bar">
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="B-tec.html">Tecnologia</a>
-                        </li>
-                        <li>
-                            <a href="C-agricultura.html">Agricultura em Larga Escala</a>
-                        </li>
-                        <li>
-                            <a href="D-sustentabilidade.html">Sustentabilidade</a>
-                        </li>
-                        <li>
-                            <a href="Desafios.html">Desafios na Produção</a>
-                        </li>
-                        <li>
-                            <a href="quiz.html">Quiz</a>
-                        </li>
-                        <li>
-                            <a href="G-sobre.html">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
-                        </li>
-                    </ul>
-                </nav>
-                <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-            </section> <!--FIM DA NAV-->
-            <div class="banner">
-                <h1 class="reveal">Alimentando</h1>
-                <h2 class="reveal">o Mundo</h2>
-                <p class="reveal">° º º</p>
+            <nav id="nav_bar">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="B-tec.html">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="C-agricultura.html">Agricultura em Larga Escala</a>
+                    </li>
+                    <li>
+                        <a href="D-sustentabilidade.html">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="Desafios.html">Desafios na Produção</a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="G-sobre.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
+                    </li>
+                </ul>
+            </nav>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        </section> <!--FIM DA NAV-->
+        <div class="banner">
+            <h1 class="reveal">Alimentando</h1>
+            <h2 class="reveal">o Mundo</h2>
+            <p class="reveal">° º º</p>
+        </div>
+    </header>
+    <main>
+        <section id="como">
+            <div class="moldura">
+                <h2 class="reveal">Como alimentar 8 bilhões de pessoas?</h2>
+                <h3 class="reveal">A pergunta que os grandes líderes estão (ou pelo menos deveriam estar) em busca da
+                    resposta.</h3>
+                <p class="reveal"> Por muito tempo, essa questão pareceu ser impossivel de ser solucionada, mas nos dias
+                    atuais com as diversas tecnologias que temos acesso, esse problema se torna cada vez mais possível
+                    de se alcançar para ser solucionado. <br> Através de muitas pesquisas e dados reunidos, nossa equipe
+                    desenvolveu essa plataforma que, além de muitas outras coisas, conta com uma calculadora de
+                    alimentação para grandes populações e alternativas mais saudáveis para essa questão sem a
+                    necessidade do consumo em massa de produtos ultraprocessados.</p>
             </div>
-        </header>
-        <main>
-            <section id="como">
-                <div class="moldura">
-                    <h2 class="reveal">Como alimentar 8 bilhões de pessoas?</h2>
-                    <h3 class="reveal">A pergunta que os grandes líderes estão (ou pelo menos deveriam estar) em busca da resposta.</h3>
-                    <p class="reveal">   Por muito tempo, essa questão pareceu ser impossivel de ser solucionada, mas nos dias atuais com as diversas tecnologias que temos acesso, esse problema se torna cada vez mais possível de se alcançar para ser solucionado. <br>    Através de muitas pesquisas e dados reunidos, nossa equipe desenvolveu essa plataforma que, além de muitas outras coisas,  conta com uma calculadora de alimentação para grandes populações e alternativas mais saudáveis para essa questão sem a necessidade do consumo em massa de produtos ultraprocessados.</p>
-                </div>
-                <div class="firstimg">
-                    <img src="src/img/refeiçao.png" alt="Almoço">
-                </div>
-            </section>
-            <section id="situacao">
-                <h2 class="reveal">Situação Atual do Mundo</h2>
-                <p class="reveal">
-                        Como todos sabemos, uma área de produção e trabalho que vem crescendo muito nos últimos anos é a alimentação; Só no Brasil, a estimativa dos registros de abertura de restaurantes chegou a ser de 250 mil novos negócios em apenas um ano! Porém, cerca de 29 mil estabelecimentos para mais acabam se fechando no mesmo período, e por quê isso acontece? Alguns dos principais motivos é por falta de planejamento, concorrências, baixa barreira de entrada e custos operacionais, todas essas questões são reais, muitas empresas acabam abrindo seus negócios por pensarem que será fácil, mas quando menos esperam elas tendem a fechar fechar às portas. 
-        Nesse mesmo tema, a produção de alimentos de origem animal terrestre no mundo disparou nas últimas décadas, com as atenções voltadas para ovos, aves e carne suína. Não são só os restaurantes que têm uma taxa grande de crescimento, a pecuária se consolidou como um dos setores agrícolas de maior crescimento, segundo a FAO (Organização das Nações Unidas para Alimentação e Agricultura).
-        Com o crescimento da população em grande escala, a produção de comida também precisaria crescer da mesma forma, porém nem sempre isso é possível. E a missão que nos foi proposta foi pensar em formas de reverter essa situação.
-                </p>
-                <img src="src/img/image 1.png" alt="Prato :(" class="reveal">
-            </section>
-        </main>
-        <footer>
-            
-            <div class="footer-content">
+            <div class="firstimg">
+                <img src="src/img/refeiçao.png" alt="Almoço">
+            </div>
+        </section>
+        <section id="situacao">
+            <h2 class="reveal">Situação Atual do Mundo</h2>
+            <p class="reveal">
+                Como todos sabemos, uma área de produção e trabalho que vem crescendo muito nos últimos anos é a
+                alimentação; Só no Brasil, a estimativa dos registros de abertura de restaurantes chegou a ser de 250
+                mil novos negócios em apenas um ano! Porém, cerca de 29 mil estabelecimentos para mais acabam se
+                fechando no mesmo período, e por quê isso acontece? Alguns dos principais motivos é por falta de
+                planejamento, concorrências, baixa barreira de entrada e custos operacionais, todas essas questões são
+                reais, muitas empresas acabam abrindo seus negócios por pensarem que será fácil, mas quando menos
+                esperam elas tendem a fechar fechar às portas.
+                Nesse mesmo tema, a produção de alimentos de origem animal terrestre no mundo disparou nas últimas
+                décadas, com as atenções voltadas para ovos, aves e carne suína. Não são só os restaurantes que têm uma
+                taxa grande de crescimento, a pecuária se consolidou como um dos setores agrícolas de maior crescimento,
+                segundo a FAO (Organização das Nações Unidas para Alimentação e Agricultura).
+                Com o crescimento da população em grande escala, a produção de comida também precisaria crescer da mesma
+                forma, porém nem sempre isso é possível. E a missão que nos foi proposta foi pensar em formas de
+                reverter essa situação.
+            </p>
+            <img src="src/img/image 1.png" alt="Prato :(" class="reveal">
+        </section>
+    </main>
+    <footer>
 
-                <div class="geral">
-                    <div class="titulo">
-                        <img src="src/img/logo-v2.png" alt="" class="reveal">
+        <div class="footer-content">
+
+            <div class="geral">
+                <div class="titulo">
+                    <img src="src/img/logo-v2.png" alt="" class="reveal">
                     <h2 class="reveal">Alimentando o Mundo</h2>
                 </div>
                 <p class="reveal">
@@ -108,41 +143,42 @@
                 </a>
 
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png" alt="Instagram"></a>
-                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png"
+                            alt="Instagram"></a>
+                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png"
+                            alt="GitHub"></a>
                 </div>
 
             </div>
         </div>
 
-            <img class="triangulos-footer"
-            src="src/img/back-tri-footer.png"
-            alt="">
+        <img class="triangulos-footer" src="src/img/back-tri-footer.png" alt="">
 
-            <div class="copyright">
-                © 2026 Alimentando o Mundo. All rights reserved.
-            </div>
-        </footer>
+        <div class="copyright">
+            © 2026 Alimentando o Mundo. All rights reserved.
+        </div>
+    </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.15
-    });
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
 
-    // Agora busca TODOS os elementos .reveal da página
-    document.querySelectorAll(".reveal").forEach((el) => {
-      observer.observe(el);
-    });
-  });
-</script>
+            // Agora busca TODOS os elementos .reveal da página
+            document.querySelectorAll(".reveal").forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
 
-    </body>
-    </html>
+</body>
+
+</html>
