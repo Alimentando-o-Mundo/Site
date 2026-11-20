@@ -123,5 +123,26 @@
                 © 2026 Alimentando o Mundo. All rights reserved.
             </div>
         </footer>
+        
+        <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          // Para de observar o elemento após a primeira animação
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    document.querySelectorAll(".banner .reveal").forEach((el) => {
+      observer.observe(el);
+    });
+  });
+</script>
+
     </body>
     </html>
