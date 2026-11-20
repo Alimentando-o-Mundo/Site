@@ -87,7 +87,7 @@
                     Produzir para o presente, inovar para o futuro e preservar para as próximas gerações.
                 </p>
             </div>
-            <div class="mapa" class="reveal">
+            <div class="mapa">
                 <h2>Mapa da Página</h2>
                 <ul>
                     <li>
@@ -123,14 +123,13 @@
                 © 2026 Alimentando o Mundo. All rights reserved.
             </div>
         </footer>
-        
-        <script>
+
+<script>
   document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
-          // Para de observar o elemento após a primeira animação
           observer.unobserve(entry.target);
         }
       });
@@ -138,7 +137,8 @@
       threshold: 0.15
     });
 
-    document.querySelectorAll(".banner .reveal").forEach((el) => {
+    // Agora busca TODOS os elementos .reveal da página
+    document.querySelectorAll(".reveal").forEach((el) => {
       observer.observe(el);
     });
   });
