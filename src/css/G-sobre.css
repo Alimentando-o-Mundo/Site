@@ -89,43 +89,104 @@ section.time h2 {
     margin: 0 auto;
 }
 
+section.time div.carrossel{
+    display: flex;
+    align-items: center;
+}
+
+section.time div.janela{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 section.time ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px 45px;
-    padding: 3vw;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+    padding: 40px 0;
     list-style: none;
+    width: max-content;
+    margin: 0;
+    transition: transform 0.6s ease;
 }
 
 section.time ul li {
-    width: 250px;
+    flex: 0 0 200px;
+    height: 200px;
     background-color: #edf1e9;
-    text-align: center;
-    padding-bottom: 20px;
+    border-radius: 50%;
     overflow: hidden;
+    transition: all 0.6s ease;
 }
 
 section.time ul li img {
     width: 100%;
-    height: 320px;
+    height: 100%;
     object-fit: cover;
     display: block;
+    border-radius: 50%;
 }
 
 section.time ul li div {
-    padding: 10px 5px;
+    display: none;
 }
 
 section.time ul li h3 {
-    font-size: 16px;
-    margin: 5px 0 8px;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 5px;
+}
+
+section.time ul li h4{
+    color: #CF6123;
+    padding: 0 5px 5px 5px;
+    font-weight: 600;
 }
 
 section.time ul li p {
-    font-size: 12px;
-    margin: 0;
-    color: #888;
+    font-size: 14px;
+    margin: 3px;
+    color: #787878;
+}
+
+section.time ul li.ativo{
+    flex: 0 0 340px;
+    height: 500px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+section.time ul li.ativo img{
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+}
+
+section.time ul li.ativo div{
+    display: block;
+    padding: 10px 5px;
+    text-align: left;
+}
+
+section.time button.seta {
+    background-color: #CF6123;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.seta:hover {
+    background-color: #a84918;
 }
 
 footer {

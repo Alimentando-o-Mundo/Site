@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <script src="src/js/sobre.js" defer></script>
     <header> <!--NAV (copiar e colar em todas as paginas!)-->
         <section id="nav-bar">
             <a href="index.html" class="logo"><img src="src/img/logo-v2.png" alt="logo"></a>
@@ -67,93 +68,117 @@
             </p>
         </section>
         <section id="time" class="time">
-            <h2 class="reveal">Team</h2>
-            <ul>
-                <li>
-                    <img src="src/img/Maria.jpg" alt="maria" class="reveal">
-                    <div>
-                        <h3 class="reveal">Maria Eduarda do Nascimento Fraga</h3>
-                        <h4 class="reveal">
-                            Diretora Geral
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou como Diretora geral, organizando as atividades de cada um. Produziu as Páginas "Inicial" e a "Pesquisa de Satisfação", sendo responsável pelas atas juntamente com o Guilherme e organizou o GitHub.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Raquel.jpg" alt="Raquel" class="reveal">
-                    <div>
-                        <h3 class="reveal">Raquel Durães</h3>
-                        <h4 class="reveal">
-                            Programadora
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou na parte de programação do site e colaboradora nas redes sociais. Produziu a página "Sustentabilidade" e auxiliou no desing do site além da colaboração nas redes sociais.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Isabella.jpg" alt="Isabella" class="reveal">
-                    <div>
-                        <h3 class="reveal">Isabella Machado</h3>
-                        <h4 class="reveal">
-                            Programadora
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou como uma das programadoras do site. Produziu as Páginas "Sobre Nós" e "Pecuária" que foi retirada depois, auxiliou o desing no Figma e suporte no GitHub.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Alice.jpg" alt="Alice" class="reveal">
-                    <div>
-                        <h3 class="reveal">Alice Gouvea Soares</h3>
-                        <h4 class="reveal">
-                            Responsável Pesquisas
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou principalmente na parte das pesquisas para o site. Auxiliou na programação da página "Desafios da Produção".
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Guilherme.jpg" alt="Guilherme" class="reveal">
-                    <div>
-                        <h3 class="reveal">Guilherme Andrade Queiroz</h3>
-                        <h4 class="reveal">
-                            Programador
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou como um dos programadores do site. Produziu a página "Quiz" e colaborou com as atas, também participando como secretário.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Mehiel.jpg" alt="Mehiel" class="reveal">
-                    <div>
-                        <h3 class="reveal">Mehiel Krahl Amorim</h3>
-                        <h4 class="reveal">
-                            Programador e Responsável Figma
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou com o desing inicial do site no Figma e atuou como programador do site. Produziu a página "Agricultura em Larga Escala", colaborou com as outras páginas e com o GitHub.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <img src="src/img/Julio.jpg" alt="Julio" class="reveal">
-                    <div>
-                        <h3 class="reveal">Julio Cesar Koch</h3>
-                        <h4 class="reveal">
-                            Responsável Redes Sociais
-                        </h4>
-                        <p class="reveal">
-                            Trabalhou principalmente com as redes sociais, e como programador do site. Produziu a página "Tecnologia" e auxiliou no desing além de ter cuidado oficialmente das redes sociais.
-                        </p>
-                    </div>
-                </li>
-            </ul>
+            <h2>Team</h2>
+            <div class="carrossel">
+                <button type="button" class="seta anterior" id="anterior">&#10094;</button>
+                <div class="janela">
+                    <ul class="lista-equipe">
+                        <li class="membro">
+                            <img src="src/img/Maria.jpg" alt="maria">
+                            <div>
+                                <h3>Maria Eduarda do Nascimento Fraga</h3>
+                                <h4>
+                                    Diretora Geral
+                                </h4>
+                                <p>
+                                    Trabalhou como Diretora geral. Produziu as
+                                    Páginas
+                                    "Inicial" e a "Pesquisa de Satisfação", sendo responsável pelas atas juntamente com
+                                    o
+                                    Guilherme e organizou o GitHub.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Raquel.jpg" alt="Raquel">
+                            <div>
+                                <h3>Raquel Durães</h3>
+                                <h4>
+                                    Programadora
+                                </h4>
+                                <p>
+                                    Trabalhou na parte de programação do site e colaboradora nas redes sociais. Produziu
+                                    a
+                                    página "Sustentabilidade" e auxiliou no desing do site além da colaboração nas redes
+                                    sociais.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Isabella.jpg" alt="Isabella">
+                            <div>
+                                <h3>Isabella Machado</h3>
+                                <h4>
+                                    Programadora
+                                </h4>
+                                <p>
+                                    Trabalhou como uma das programadoras do site. Produziu as Páginas "Sobre Nós" e
+                                    "Pecuária" que foi retirada depois, auxiliou o desing no Figma e suporte no GitHub.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Alice.jpg" alt="Alice">
+                            <div>
+                                <h3>Alice Gouvea Soares</h3>
+                                <h4>
+                                    Responsável Pesquisas
+                                </h4>
+                                <p>
+                                    Trabalhou principalmente na parte das pesquisas para o site. Auxiliou na programação
+                                    da
+                                    página "Desafios da Produção".
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Guilherme.jpg" alt="Guilherme">
+                            <div>
+                                <h3>Guilherme Andrade Queiroz</h3>
+                                <h4>
+                                    Programador
+                                </h4>
+                                <p>
+                                    Trabalhou como um dos programadores do site. Produziu a página "Quiz" e colaborou
+                                    com as
+                                    atas, também participando como secretário.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Mehiel.jpg" alt="Mehiel">
+                            <div>
+                                <h3>Mehiel Krahl Amorim</h3>
+                                <h4>
+                                    Programador e Responsável Figma
+                                </h4>
+                                <p>
+                                    Trabalhou com o desing inicial do site no Figma e atuou como programador do site.
+                                    Produziu a página "Agricultura em Larga Escala", colaborou com as outras páginas e
+                                    com o
+                                    GitHub.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="membro">
+                            <img src="src/img/Julio.jpg" alt="Julio">
+                            <div>
+                                <h3>Julio Cesar Koch</h3>
+                                <h4>
+                                    Responsável Redes Sociais
+                                </h4>
+                                <p>
+                                    Trabalhou principalmente com as redes sociais, e como programador do site. Produziu
+                                    a
+                                    página "Tecnologia" e auxiliou no desing além de ter cuidado oficialmente das redes
+                                    sociais.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="seta proximo" id="proximo">&#10095;</button>
+            </div>
         </section>
     </main>
     <footer>
