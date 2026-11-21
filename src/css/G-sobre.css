@@ -67,6 +67,7 @@ section.texto {
 section.texto img {
     padding: 2vw 2vw 3vw 2vw;
     width: 700px;
+    z-index: 1;
 }
 
 section.texto p {
