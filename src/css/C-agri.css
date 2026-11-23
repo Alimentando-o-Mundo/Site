@@ -519,7 +519,7 @@ footer{
 }
 
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 1024px){
 
     
     header {
@@ -584,7 +584,7 @@ footer{
 
 
     header {
-        height: 480px;
+        height: 680px;
         background-position: center;
     }
 

@@ -253,7 +253,7 @@ main {
 
             box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
-            width: 750px;
+            width: 100%;
 
             p{
                 padding: 30px 10px 30px 24px;
@@ -443,6 +443,51 @@ footer{
         margin-top: -40px;
     }
 
+    section#crescimento{
+        display: block;
+
+        ul{
+            padding: 20px; 
+            gap: 20px;
+
+            li{
+                height: 200px;
+            }
+        }
+        img{
+            height: 550px;
+            width: 100%;
+        }
+    }
+
+    section#clima{
+        display: block;
+
+        ul{
+            display: block;
+
+            li{
+                width: 100%;
+                margin: 15px 0;
+                text-align: left;
+            }
+        }
+    }
+
+        section#oq-fazer{
+        display: block;
+
+
+        li{
+            width: 100%;
+            text-align: left;
+        }
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+
 
     footer{
         background: linear-gradient(to left,#CF6123, #9b3c1b );
@@ -474,7 +519,7 @@ footer{
 
 
     header {
-        height: 480px;
+        height: 680px;
         background-position: center;
     }
 
@@ -501,6 +546,47 @@ footer{
         padding-bottom: 10px;
         text-align: center;
     }
+
+    section#crescimento{
+        display: block;
+        text-align: center;
+        ul{
+            padding: 20px;
+
+            li{
+                height: 250px;
+            }
+        }
+        img{
+            height: 500px;
+        }
+    }
+
+    section#clima{
+        display: block;
+        text-align: center;
+
+        ul{
+            display: block;
+
+            li{
+                width: 100%;
+                margin: 15px 0;
+                text-align: left;
+            }
+        }
+    }
+
+    section#oq-fazer{
+        display: block;
+        text-align: center;
+
+        li{
+            width: 100%;
+            text-align: left;
+        }
+    }
+
     footer {
         padding: 30px 7vw 0;
         margin-top: 30px;
@@ -592,17 +678,3 @@ footer{
     }
 }
 
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-
-    header > #nav-bar:not(.aberto) {
-        width: 90vw;
-        max-width: 90vw;
-        min-width: 0;
-        left: 5vw;
-        right: auto;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-}
