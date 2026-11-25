@@ -1,48 +1,50 @@
+
 const lista = document.querySelector('.lista-equipe');
 const membros = document.querySelectorAll('.membro');
 const anterior = document.querySelector('#anterior');
 const proximo = document.querySelector('#proximo');
 
 let indiceAtual = 0;
+const quantidade = 4;
 
-function atualizarCarrossel () {
+function atualizarCarrossel() {
+
+    const inicio = Math.floor(indiceAtual / quantidade) * quantidade;
+    const fim = Math.min(inicio + quantidade, membros.length);
+
     membros.forEach((membro, index) => {
-        if (index === indiceAtual) {
-            membro.classList.add('ativo');
+
+        if (index >= inicio && index < fim) {
+            membro.style.display = 'block';
         } else {
-            membro.classList.remove('ativo');
+            membro.style.display = 'none';
         }
-    });
 
-    const selecionado = membros[indiceAtual];
-
-    selecionado.classList.add('ativo');
-
-    const janela = document.querySelector('.janela');
-    requestAnimationFrame(() => {
-        const centroJanela = janela.clientWidth / 2;
-        const centroCard = selecionado.offsetLeft + (selecionado.offsetWidth / 2);
-        const deslocamento = centroJanela - centroCard;
-
-        lista.style.transform = `translateX(${deslocamento}px)`;
+        membro.classList.toggle('ativo', index === indiceAtual);
     });
 }
 
-proximo.addEventListener('click', () =>{
-    indiceAtual++;
+proximo.addEventListener('click', () => {
 
-    if(indiceAtual >= membros.length){
+    let proximoGrupo = Math.floor(indiceAtual / quantidade) + 1;
+
+    if (proximoGrupo * quantidade >= membros.length) {
         indiceAtual = 0;
+    } else {
+        indiceAtual = proximoGrupo * quantidade;
     }
 
     atualizarCarrossel();
 });
 
-anterior.addEventListener('click', () =>{
-    indiceAtual--;
+anterior.addEventListener('click', () => {
 
-    if(indiceAtual < 0){
-        indiceAtual = membros.length - 1;
+    let grupoAnterior = Math.floor(indiceAtual / quantidade) - 1;
+
+    if (grupoAnterior < 0) {
+        indiceAtual = Math.floor((membros.length - 1) / quantidade) * quantidade;
+    } else {
+        indiceAtual = grupoAnterior * quantidade;
     }
 
     atualizarCarrossel();

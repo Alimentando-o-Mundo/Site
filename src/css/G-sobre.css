@@ -90,12 +90,14 @@ section.time h2 {
     margin: 0 auto;
 }
 
-section.time div.carrossel{
+section.time div.carrossel {
     display: flex;
     align-items: center;
+    position: relative;
+    width: 100%;
 }
 
-section.time div.janela{
+section.time div.janela {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -104,22 +106,24 @@ section.time div.janela{
 section.time ul {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 35px;
+    justify-content: center;
+    gap: 80px;
     padding: 40px 0;
     list-style: none;
-    width: max-content;
+    width: 100%;
     margin: 0;
-    transition: transform 0.6s ease;
 }
 
 section.time ul li {
+    display: block;
     flex: 0 0 200px;
+    width: 200px;
     height: 200px;
     background-color: #edf1e9;
     border-radius: 50%;
     overflow: hidden;
-    transition: all 0.6s ease;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 section.time ul li img {
@@ -134,13 +138,36 @@ section.time ul li div {
     display: none;
 }
 
+section.time ul li.ativo {
+    flex: 0 0 340px;
+    height: 500px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: default;
+}
+
+section.time ul li.ativo img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    border-top-right-radius: 20px;
+}
+
+section.time ul li.ativo div {
+    display: block;
+    padding: 10px 5px;
+    text-align: left;
+}
+
 section.time ul li h3 {
     font-size: 20px;
     font-weight: 550;
     margin: 5px;
 }
 
-section.time ul li h4{
+section.time ul li h4 {
     color: #CF6123;
     padding: 0 5px 5px 5px;
     font-weight: 600;
@@ -150,28 +177,6 @@ section.time ul li p {
     font-size: 14px;
     margin: 3px;
     color: #787878;
-}
-
-section.time ul li.ativo{
-    flex: 0 0 340px;
-    height: 500px;
-    border-radius: 0;
-    border-top-right-radius: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-section.time ul li.ativo img{
-    width: 100%;
-    height: 300px;
-    border-radius: 0;
-    border-top-right-radius: 20px;
-}
-
-section.time ul li.ativo div{
-    display: block;
-    padding: 10px 5px;
-    text-align: left;
 }
 
 section.time button.seta {
@@ -186,7 +191,7 @@ section.time button.seta {
     margin: 10px;
 }
 
-.seta:hover {
+section.time button.seta:hover {
     background-color: #a84918;
 }
 
@@ -386,16 +391,46 @@ footer {
         width: 200px;
     }
 
+    section.time div.janela {
+        width: 70%;
+    }
+
     section.time ul {
-        padding: 9vw;
+        gap: 15px;
+    }
+
+    section.time ul li {
+        flex: 0 0 100px;
+        height: 100px;
+    }
+
+    section.time ul li img {
+        width: 90%;
+        height: 90%;
     }
 
     section.time ul li h3 {
-        font-size: 23px;
+        font-size: 17px;
     }
 
-    section.time ul li p {
-        font-size: 15px;
+    section.time ul li h4 {
+        font-size: 14px;
+    }
+
+    section.time ul li.ativo {
+        flex: 0 0 240px;
+        height: 400px;
+    }
+
+    section.time ul li.ativo img {
+        width: 100%;
+        height: 170px;
+    }
+
+    section.time button.seta {
+        width: 35px;
+        height: 35px;
+        margin: 10px;
     }
 
     footer .footer-content {
