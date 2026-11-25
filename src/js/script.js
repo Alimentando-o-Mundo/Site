@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     burguer.textContent = 'menu';
     burguer.setAttribute('aria-expanded', 'false');
 
-    // Abrir e fechar
+    // Abrir e fechar 
     window.clickMenu = function () {
 
         const aberto = menu.classList.toggle('aberto');
