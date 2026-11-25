@@ -5,9 +5,25 @@ const anterior = document.querySelector('#anterior');
 const proximo = document.querySelector('#proximo');
 
 let indiceAtual = 0;
-const quantidade = 4;
+function quantidadeVisivel() {
+    if (window.innerWidth <= 600) {
+        return 1;
+    } 
+
+    if (window.innerWidth <= 1020) {
+        return 2;
+    }
+
+    if (window.innerWidth <= 1400) {
+        return 3;
+    }
+
+    return 4;
+}
 
 function atualizarCarrossel() {
+
+    const quantidade = quantidadeVisivel();
 
     const inicio = Math.floor(indiceAtual / quantidade) * quantidade;
     const fim = Math.min(inicio + quantidade, membros.length);
@@ -26,6 +42,8 @@ function atualizarCarrossel() {
 
 proximo.addEventListener('click', () => {
 
+    const quantidade = quantidadeVisivel();
+
     let proximoGrupo = Math.floor(indiceAtual / quantidade) + 1;
 
     if (proximoGrupo * quantidade >= membros.length) {
@@ -38,6 +56,8 @@ proximo.addEventListener('click', () => {
 });
 
 anterior.addEventListener('click', () => {
+
+    const quantidade = quantidadeVisivel();
 
     let grupoAnterior = Math.floor(indiceAtual / quantidade) - 1;
 
