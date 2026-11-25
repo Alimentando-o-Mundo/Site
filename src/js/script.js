@@ -63,3 +63,48 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+
+// MODO ESCURO
+
+const botaoTema = document.getElementById("theme-toggle");
+
+// Recupera o tema salvo
+const temaSalvo = localStorage.getItem("tema");
+
+// Aplica o tema ao carregar a página
+if (temaSalvo === "escuro") {
+    document.body.classList.add("dark-mode");
+}
+
+// Atualiza o ícone do botão
+function atualizarIconeTema() {
+    const icone = botaoTema.querySelector(".material-icons");
+
+    if (document.body.classList.contains("dark-mode")) {
+        icone.textContent = "light_mode";
+        botaoTema.setAttribute("aria-label", "Ativar modo claro");
+        botaoTema.setAttribute("title", "Modo claro");
+    } else {
+        icone.textContent = "dark_mode";
+        botaoTema.setAttribute("aria-label", "Ativar modo escuro");
+        botaoTema.setAttribute("title", "Modo escuro");
+    }
+}
+
+atualizarIconeTema();
+
+// Alterna entre os temas
+botaoTema.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    const temaAtual = document.body.classList.contains("dark-mode")
+        ? "escuro"
+        : "claro";
+
+    localStorage.setItem("tema", temaAtual);
+
+    atualizarIconeTema();
+
+});

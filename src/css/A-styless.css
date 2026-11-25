@@ -484,3 +484,158 @@ footer{
         margin-top: 20px;
     }
 }
+
+/* =================================
+   MODO ESCURO
+================================= */
+
+/* Variáveis do modo claro */
+:root {
+    --cor-fundo: #fff8eb;
+    --cor-texto: #292522;
+    --cor-titulo: #cf6123;
+    --cor-card: #ffffff;
+    --cor-borda: #e5d9c8;
+}
+
+/* Variáveis do modo escuro */
+body.dark-mode {
+    --cor-fundo: #191715;
+    --cor-texto: #eee8df;
+    --cor-titulo: #f18a4d;
+    --cor-card: #272320;
+    --cor-borda: #403831;
+}
+
+/* Transição suave */
+body,
+main,
+#como,
+#situacao,
+.moldura,
+.moldura h2,
+.moldura h3,
+.moldura p,
+#situacao h2,
+#situacao p,
+footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fundo geral */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+main {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Textos da introdução */
+.moldura h2,
+.moldura p,
+#situacao p {
+    color: var(--cor-texto);
+}
+
+/* Títulos em destaque */
+.moldura h3,
+#situacao h2 {
+    color: var(--cor-titulo);
+}
+
+/* Navegação */
+body.dark-mode .menu a {
+    color: #f5eee6;
+}
+
+body.dark-mode .menu a:hover {
+    color: #f18a4d;
+}
+
+/* Ícone do menu mobile */
+body.dark-mode #burguer {
+    color: #ffffff;
+}
+
+/* Botão de alternar tema */
+#theme-toggle {
+    background: transparent;
+    border: 2px solid currentColor;
+    color: inherit;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 15px;
+    z-index: 1001;
+}
+
+#theme-toggle:hover {
+    background-color: #cf6123;
+    color: white;
+    border-color: #cf6123;
+    transform: rotate(15deg);
+}
+
+#theme-toggle .material-icons {
+    font-size: 23px;
+}
+
+/* Modo escuro: cabeçalho e navegação */
+body.dark-mode #nav-bar {
+    color: #ffffff;
+}
+
+/* Imagens de redes sociais */
+body.dark-mode .social-icons img {
+    filter: invert(1);
+}
+
+/* Rodapé */
+body.dark-mode footer {
+    background: linear-gradient(to left, #713817, #422318);
+}
+
+body.dark-mode footer .copyright {
+    background-color: #151311;
+}
+
+/* Botão voltar ao topo */
+body.dark-mode footer .button-footer div {
+    background-color: #292522;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #f7f1e8;
+}
+
+/* Triângulos do rodapé */
+body.dark-mode footer .triangulos-footer {
+    opacity: 0.35;
+}
+
+/* Imagens do conteúdo */
+body.dark-mode .firstimg img,
+body.dark-mode #situacao img {
+    border-radius: 15px;
+}
+
+/* Responsividade do botão */
+@media screen and (max-width: 600px) {
+    #theme-toggle {
+        width: 36px;
+        height: 36px;
+        margin-left: 8px;
+    }
+
+    #theme-toggle .material-icons {
+        font-size: 21px;
+    }
+}

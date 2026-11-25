@@ -896,3 +896,196 @@ footer{
     }
 
 }
+
+
+/* MODO ESCURO  */
+
+body,
+main,
+section,
+section p,
+section h2,
+section h3,
+section h4,
+section li,
+footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode,
+body.dark-mode main {
+    background-color: #191715;
+    color: #F7F1E8;
+}
+
+body.dark-mode #oque {
+    background-color: #191715;
+}
+
+body.dark-mode #oque h2 {
+    color: #F7F1E8;
+}
+
+body.dark-mode #oque h2 span {
+    color: #F18A4D;
+    border-color: #F18A4D;
+}
+
+body.dark-mode #oque p {
+    color: #E5DDD3;
+}
+
+body.dark-mode #como {
+    background-color: #191715;
+}
+
+body.dark-mode #como h3 {
+    color: #F18A4D;
+}
+
+body.dark-mode #como li h4 {
+    color: #80C96B;
+}
+
+body.dark-mode #como li h4 span {
+    border-color: #80C96B;
+}
+
+body.dark-mode #como li p {
+    color: #E5DDD3;
+}
+
+body.dark-mode #vantagens {
+    background-color: #35251D;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #vantagens h2 {
+    color: #F18A4D;
+}
+
+body.dark-mode #vantagens ul h3 {
+    color: #F18A4D;
+}
+
+body.dark-mode #vantagens ul p {
+    color: #E5DDD3;
+}
+
+
+body.dark-mode #produtos {
+    background-color: #191715;
+}
+
+body.dark-mode #produtos h2,
+body.dark-mode #produtos h3 {
+    color: #F18A4D;
+}
+
+body.dark-mode #produtos h2 span {
+    border-color: #F18A4D;
+}
+
+body.dark-mode #produtos h3 span {
+    border-color: #F18A4D;
+}
+
+body.dark-mode #produtos .slide p {
+    color: #E5DDD3;
+}
+
+body.dark-mode .seta {
+    background-color: #8E401E;
+    color: #FFFFFF;
+}
+
+body.dark-mode .seta:hover {
+    background-color: #CF6123;
+}
+
+body.dark-mode .seta:disabled {
+    opacity: 0.3;
+}
+
+
+body.dark-mode #dados {
+    background-color: #743A20;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #dados h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode #dados ul li {
+    background-color: #292522;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #dados ul li h3 {
+    color: #F18A4D;
+}
+
+body.dark-mode #dados ul li p {
+    color: #E5DDD3;
+}
+
+
+body.dark-mode footer {
+    background: linear-gradient(to left, #713817, #422318);
+}
+
+body.dark-mode footer .copyright {
+    background-color: #151311;
+    color: #F7F1E8;
+}
+
+body.dark-mode footer .button-footer div {
+    background-color: #292522;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #F7F1E8;
+}
+
+body.dark-mode footer .button-footer:hover div {
+    background-color: #CF6123;
+}
+
+body.dark-mode footer .social-icons img {
+    filter: invert(1);
+}
+
+body.dark-mode footer .triangulos-footer {
+    opacity: 0.35;
+}
+
+body.dark-mode .menu a {
+    color: #F7F1E8;
+}
+
+body.dark-mode .menu a:hover {
+    color: #F18A4D;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: rotate(15deg);
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body.dark-mode #vantagens {
+        background-color: #35251D;
+    }
+
+    body.dark-mode #dados ul li {
+        background-color: #292522;
+    }
+
+}

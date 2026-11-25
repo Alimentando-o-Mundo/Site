@@ -555,3 +555,202 @@ footer{
         display: none;
     }
 }
+
+
+/* ==========================================
+   MODO ESCURO - PÁGINA TECNOLOGIA
+========================================== */
+
+/* Transições */
+body,
+main,
+section,
+section p,
+section h2,
+section h3,
+section li,
+footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fundo geral */
+body.dark-mode {
+    background-color: #191715;
+    color: #F7F1E8;
+}
+
+body.dark-mode main {
+    background-color: #191715;
+}
+
+/* ==========================================
+   INTRODUÇÃO
+========================================== */
+
+body.dark-mode #tecAlimento {
+    background-color: #191715;
+}
+
+body.dark-mode #tecAlimento h2 {
+    color: #F18A4D;
+}
+
+body.dark-mode #tecAlimento p {
+    color: #E5DDD3;
+}
+
+/* ==========================================
+   TECNOLOGIAS NO CAMPO
+========================================== */
+
+body.dark-mode #tecnologias {
+    background-color: #743A20;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #tecnologias h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode #tecnologias ul li {
+    background-color: #292522;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #tecnologias ul li h3 {
+    color: #F18A4D;
+}
+
+body.dark-mode #tecnologias ul li p {
+    color: #E5DDD3;
+}
+
+
+body.dark-mode #bio {
+    background-color: #17120F;
+}
+
+body.dark-mode #bio h2 {
+    color: #F18A4D;
+}
+
+body.dark-mode #bio p {
+    color: #E5DDD3;
+}
+
+
+
+body.dark-mode #automacao {
+    background-color: #191715;
+}
+
+body.dark-mode #automacao h2 {
+    color: #F18A4D;
+}
+
+body.dark-mode #automacao p {
+    color: #E5DDD3;
+}
+
+
+body.dark-mode #tec-sus {
+    background-color: #743A20;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #tec-sus h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode #tec-sus > p {
+    color: #F7F1E8;
+}
+
+body.dark-mode #tec-sus ul li {
+    background-color: #292522;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode #tec-sus ul li p {
+    color: #E5DDD3;
+}
+
+/* MENU*/
+
+body.dark-mode .menu a {
+    color: #F7F1E8;
+}
+
+body.dark-mode .menu a:hover {
+    color: #F18A4D;
+}
+
+/*BOTÃO DO MODO ESCURO*/
+
+#theme-toggle {
+    background: transparent;
+    border: 2px solid currentColor;
+    color: inherit;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 15px;
+    z-index: 1001;
+}
+
+#theme-toggle:hover {
+    background-color: #CF6123;
+    color: white;
+    border-color: #CF6123;
+    transform: rotate(15deg);
+}
+
+#theme-toggle .material-icons {
+    font-size: 23px;
+}
+
+/*RODAPÉ*/
+
+body.dark-mode footer {
+    background: linear-gradient(to left, #713817, #422318);
+}
+
+body.dark-mode footer .copyright {
+    background-color: #151311;
+}
+
+body.dark-mode footer .button-footer div {
+    background-color: #292522;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #F7F1E8;
+}
+
+body.dark-mode footer .triangulos-footer {
+    opacity: 0.35;
+}
+
+
+body.dark-mode .social-icons img {
+    filter: invert(1);
+}
+
+/* RESPONSIVIDADE*/
+
+@media screen and (max-width: 600px) {
+    #theme-toggle {
+        width: 36px;
+        height: 36px;
+        margin-left: 8px;
+    }
+
+    #theme-toggle .material-icons {
+        font-size: 21px;
+    }
+}
