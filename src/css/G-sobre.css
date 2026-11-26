@@ -527,10 +527,6 @@ body.dark-mode header {
     background-color: #171513;
 }
 
-body.dark-mode header .banner {
-    background-color: #713719c9;
-}
-
 body.dark-mode header .banner h1,
 body.dark-mode header .banner h2,
 body.dark-mode header .banner p {
