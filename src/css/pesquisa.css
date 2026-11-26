@@ -259,32 +259,6 @@ footer{
         padding: 12px 0px 0 8px;
     }
 
-    .mapa{
-        width: 30%;
-        padding-left: 4vw;
-        h2{
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.5rem;
-            padding: 0;
-            margin: 0 0 8px;
-        }
-
-        ul{
-            li{
-                margin-bottom:3px ;
-
-                a{
-                    color: #F7F1E8;
-                    font-size: 1rem;
-                }
-                a:hover{
-                    color:#f7f1e8bd;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
     .redes{
         width: 30%;
 
@@ -401,5 +375,205 @@ footer{
 
     footer .redes .social-icons {
         margin-top: 20px;
+    }
+}
+
+
+/* MODO ESCURO */
+
+body.dark-mode {
+    background-color: #171513;
+    color: #F1E9DF;
+}
+
+body.dark-mode .form-container {
+    background-color: #29231E;
+    border-top-color: #E58A50;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .header h1 {
+    color: #E58A50;
+}
+
+body.dark-mode .header p {
+    color: #C5B7A9;
+}
+
+body.dark-mode .form-group label {
+    color: #F1E9DF;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #1E1B18;
+    color: #F1E9DF;
+    border: 1px solid #59402E;
+}
+
+body.dark-mode input[type="text"]::placeholder,
+body.dark-mode input[type="email"]::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #A99A8B;
+}
+
+body.dark-mode input[type="text"]:focus,
+body.dark-mode input[type="email"]:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+    border-color: #E58A50;
+    background-color: #29231E;
+    box-shadow: 0 0 0 3px rgba(229, 138, 80, 0.15);
+}
+
+body.dark-mode select option {
+    background-color: #29231E;
+    color: #F1E9DF;
+}
+
+body.dark-mode .scale-rating {
+    background-color: #1E1B18;
+    border-color: #48382C;
+}
+
+body.dark-mode .scale-option {
+    color: #C5B7A9;
+}
+
+body.dark-mode .scale-label {
+    color: #C5B7A9;
+}
+
+body.dark-mode input[type="checkbox"],
+body.dark-mode input[type="radio"] {
+    accent-color: #E58A50;
+}
+
+body.dark-mode .submit-btn {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+body.dark-mode .submit-btn:hover {
+    background-color: #A84918;
+}
+
+body.dark-mode .submit-btn:disabled {
+    background-color: #59402E;
+    color: #C5B7A9;
+}
+
+body.dark-mode .error-message {
+    color: #FF8A80;
+}
+
+body.dark-mode .thank-you-screen .icon {
+    color: #E58A50;
+}
+
+body.dark-mode .thank-you-screen h2 {
+    color: #F1E9DF;
+}
+
+body.dark-mode .thank-you-screen p {
+    color: #C5B7A9;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background: linear-gradient(to left, #713719, #39251B);
+}
+
+body.dark-mode footer .geral p,
+body.dark-mode footer .mapa h2,
+body.dark-mode footer .titulo h2 {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .mapa ul li a {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .mapa ul li a:hover {
+    color: #E58A50;
+}
+
+body.dark-mode footer .button-footer div {
+    background-color: #29231E;
+    border: 1px solid #59402E;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .button-footer:hover div {
+    background-color: #48382C;
+}
+
+body.dark-mode footer .button-footer:hover p {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .copyright {
+    background-color: #171513;
+    color: #C5B7A9;
+}
+
+/* BOTÃO DE ALTERNÂNCIA */
+
+#theme-toggle {
+    background-color: #FFF8EB;
+    color: #CF6123;
+    border: 1px solid #E7D7C3;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+    transform: rotate(15deg);
+}
+
+#theme-toggle .material-icons {
+    font-size: 23px;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #29231E;
+    color: #E58A50;
+    border-color: #59402E;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+
+    body.dark-mode .form-container {
+        background-color: #29231E;
     }
 }

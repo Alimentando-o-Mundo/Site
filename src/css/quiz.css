@@ -683,3 +683,303 @@ footer{
     }
 
 }
+
+/*MODO ESCURO */
+
+body.dark-mode {
+    background-color: #171513;
+    color: #F1E9DF;
+}
+
+body.dark-mode section#nav-bar {
+    background-color: #39251B;
+}
+
+body.dark-mode section#nav-bar ul {
+    background-color: #1E1B18;
+}
+
+body.dark-mode section#nav-bar li {
+    color: #F1E9DF;
+}
+
+body.dark-mode section#nav-bar li:hover {
+    background-color: #CF6123;
+}
+
+body.dark-mode .quiz-topo {
+    color: #F1E9DF;
+}
+
+body.dark-mode .barra {
+    background-color: #48382C;
+}
+
+body.dark-mode #progresso {
+    background-color: #E58A50;
+}
+
+body.dark-mode .quiz-card {
+    background-color: #29231E;
+    border: 1px solid #48382C;
+}
+
+body.dark-mode .pergunta-area h1 {
+    color: #F1E9DF;
+}
+
+body.dark-mode .tag {
+    color: #E58A50;
+}
+
+body.dark-mode .alternativa {
+    background-color: #1E1B18;
+    color: #F1E9DF;
+    border-color: #59402E;
+}
+
+body.dark-mode .alternativa:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+    border-color: #CF6123;
+}
+
+body.dark-mode .alternativa:disabled {
+    color: #F1E9DF;
+}
+
+body.dark-mode .correta {
+    background-color: #244A32;
+    border-color: #4CAF50;
+    color: #D8F3DC;
+}
+
+body.dark-mode .errada {
+    background-color: #542B2B;
+    border-color: #E53935;
+    color: #FFE0E0;
+}
+
+body.dark-mode .explicacao {
+    background-color: #1E1B18;
+    color: #F1E9DF;
+    border: 1px solid #48382C;
+}
+
+body.dark-mode .explicacao strong {
+    color: #E58A50;
+}
+
+body.dark-mode .explicacao p {
+    color: #C5B7A9;
+}
+
+body.dark-mode .btn-proxima {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+body.dark-mode .btn-proxima:hover {
+    background-color: #A84918;
+}
+
+body.dark-mode .resultado {
+    color: #F1E9DF;
+}
+
+body.dark-mode .resultado-card {
+    background-color: #29231E;
+    border: 1px solid #48382C;
+}
+
+body.dark-mode .resultado-card h1 {
+    color: #F1E9DF;
+}
+
+body.dark-mode .voce-acertou {
+    color: #C5B7A9;
+}
+
+body.dark-mode .check {
+    color: #E58A50;
+}
+
+body.dark-mode .pontuacao {
+    color: #E58A50;
+}
+
+body.dark-mode .mensagem {
+    color: #F1E9DF;
+}
+
+body.dark-mode .mensagem p {
+    color: #C5B7A9;
+}
+
+body.dark-mode #nome {
+    background-color: #1E1B18;
+    color: #F1E9DF;
+    border: 1px solid #59402E;
+}
+
+body.dark-mode #nome::placeholder {
+    color: #A99A8B;
+}
+
+body.dark-mode #nome:focus {
+    border-color: #E58A50;
+}
+
+body.dark-mode .btn-principal {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+body.dark-mode .btn-principal:hover {
+    background-color: #A84918;
+}
+
+body.dark-mode .btn-secundario {
+    background-color: #48382C;
+    color: #F1E9DF;
+}
+
+body.dark-mode .btn-secundario:hover {
+    background-color: #59402E;
+}
+
+/* RANKING */
+
+body.dark-mode .ranking h1 {
+    color: #FFF8EB;
+    background: linear-gradient(to left, #713719, #CF6123, #39251B);
+}
+
+body.dark-mode .ranking h1 span {
+    background-color: #29231E;
+    border-color: #E58A50;
+    color: #F1E9DF;
+}
+
+body.dark-mode .ranking > p {
+    color: #F1E9DF;
+}
+
+body.dark-mode #listaRanking {
+    background-color: #29231E;
+    border: 1px solid #48382C;
+}
+
+body.dark-mode .jogador {
+    border-bottom-color: #48382C;
+    color: #F1E9DF;
+}
+
+body.dark-mode .jogador strong {
+    color: #E58A50;
+}
+
+body.dark-mode .sem-ranking {
+    color: #C5B7A9;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background: linear-gradient(to left, #713719, #39251B);
+}
+
+body.dark-mode footer .geral p,
+body.dark-mode footer .mapa h2,
+body.dark-mode footer .titulo h2 {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .mapa ul li a {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .mapa ul li a:hover {
+    color: #E58A50;
+}
+
+body.dark-mode footer .button-footer div {
+    background-color: #29231E;
+    border: 1px solid #59402E;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .button-footer:hover div {
+    background-color: #48382C;
+}
+
+body.dark-mode footer .button-footer:hover p {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .copyright {
+    background-color: #171513;
+    color: #C5B7A9;
+}
+
+/* BOTÃO DE ALTERNÂNCIA */
+
+#theme-toggle {
+    background-color: #FFF8EB;
+    color: #CF6123;
+    border: 1px solid #E7D7C3;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+    transform: rotate(15deg);
+}
+
+#theme-toggle .material-icons {
+    font-size: 23px;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #29231E;
+    color: #E58A50;
+    border-color: #59402E;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1025px) {
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+}
+
+@media (max-width: 600px) {
+    body.dark-mode .quiz-card {
+        background-color: #29231E;
+    }
+
+    body.dark-mode .resultado-card {
+        background-color: #29231E;
+    }
+
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+}

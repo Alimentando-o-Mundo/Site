@@ -510,3 +510,176 @@ footer {
         height: 270px;
     }
 }
+
+
+/* MODO ESCURO */
+
+body.dark-mode {
+    background-color: #171513;
+    color: #F1E9DF;
+}
+
+body.dark-mode main {
+    background-color: #171513;
+}
+
+body.dark-mode header {
+    background-color: #171513;
+}
+
+body.dark-mode header .banner {
+    background-color: #713719c9;
+}
+
+body.dark-mode header .banner h1,
+body.dark-mode header .banner h2,
+body.dark-mode header .banner p {
+    color: #FFF8EB;
+}
+
+/* SOBRE NÓS */
+
+body.dark-mode section.texto {
+    background-color: #171513;
+}
+
+body.dark-mode section.texto p {
+    color: #C5B7A9;
+}
+
+/* NOSSA EQUIPE */
+
+body.dark-mode section.time {
+    background-color: #1E1B18;
+}
+
+body.dark-mode section.time h2 {
+    color: #E58A50;
+    border-bottom-color: #CF6123;
+}
+
+body.dark-mode section.time ul li {
+    background-color: #29231E;
+}
+
+body.dark-mode section.time ul li.ativo {
+    background-color: #29231E;
+    border: 1px solid #48382C;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode section.time ul li h3 {
+    color: #F1E9DF;
+}
+
+body.dark-mode section.time ul li h4 {
+    color: #E58A50;
+}
+
+body.dark-mode section.time ul li p {
+    color: #C5B7A9;
+}
+
+body.dark-mode section.time button.seta {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+body.dark-mode section.time button.seta:hover {
+    background-color: #A84918;
+}
+
+/* FOOTER */
+
+body.dark-mode footer {
+    background: linear-gradient(to left, #713719, #39251B);
+}
+
+body.dark-mode footer .geral p,
+body.dark-mode footer .mapa h2,
+body.dark-mode footer .titulo h2 {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .mapa ul li a {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .mapa ul li a:hover {
+    color: #E58A50;
+}
+
+body.dark-mode footer .button-footer div {
+    background-color: #29231E;
+    border: 1px solid #59402E;
+}
+
+body.dark-mode footer .button-footer div p {
+    color: #F1E9DF;
+}
+
+body.dark-mode footer .button-footer:hover div {
+    background-color: #48382C;
+}
+
+body.dark-mode footer .button-footer:hover p {
+    color: #FFF8EB;
+}
+
+body.dark-mode footer .copyright {
+    background-color: #171513;
+    color: #C5B7A9;
+}
+
+#theme-toggle {
+    background-color: #FFF8EB;
+    color: #CF6123;
+    border: 1px solid #E7D7C3;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+    transform: rotate(15deg);
+}
+
+#theme-toggle .material-icons {
+    font-size: 23px;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #29231E;
+    color: #E58A50;
+    border-color: #59402E;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #CF6123;
+    color: #FFF8EB;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.dark-mode footer {
+        background: linear-gradient(to left, #713719, #39251B);
+    }
+
+    body.dark-mode section.time ul li.ativo {
+        background-color: #29231E;
+    }
+}

@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="src/css/quiz.css">
     <link rel="stylesheet" href="src/css/nav.css">
     <link rel="stylesheet" href="src/css/reveal.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <script src="src/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="src/js/script.js" defer></script>
 
     <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
 </head>
@@ -23,36 +22,39 @@
     <header>
         <section id="nav-bar">
             <a href="index.html" class="logo"><img src="src/img/logo-v2.png" alt="logo"></a>
-                <nav id="nav_bar">
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="B-tec.html">Tecnologia</a>
-                        </li>
-                        <li>
-                            <a href="C-agricultura.html">Agricultura em Larga Escala</a>
-                        </li>
-                        <li>
-                            <a href="D-sustentabilidade.html">Sustentabilidade</a>
-                        </li>
-                        <li>
-                            <a href="Desafios.html">Desafios na Produção</a>
-                        </li>
-                        <li>
-                            <a href="quiz.html">Quiz</a>
-                        </li>
-                        <li>
-                            <a href="G-sobre.html">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
-                        </li>
-                    </ul>
-                </nav>
-                <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-            </section>
+            <nav id="nav_bar">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="B-tec.html">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="C-agricultura.html">Agricultura em Larga Escala</a>
+                    </li>
+                    <li>
+                        <a href="D-sustentabilidade.html">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="Desafios.html">Desafios na Produção</a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="G-sobre.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Ativar modo escuro" title="Alternar tema">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        </section>
     </header>
 
 
@@ -130,11 +132,11 @@
 
     </main>
     <footer>
-            <div class="footer-content">
+        <div class="footer-content">
 
-                <div class="geral">
-                    <div class="titulo">
-                        <img src="src/img/logo-v2.png" alt="">
+            <div class="geral">
+                <div class="titulo">
+                    <img src="src/img/logo-v2.png" alt="">
                     <h2>Alimentando o Mundo</h2>
                 </div>
                 <p>
@@ -162,20 +164,20 @@
                 </a>
 
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png" alt="Instagram"></a>
-                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png"
+                            alt="Instagram"></a>
+                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png"
+                            alt="GitHub"></a>
                 </div>
 
             </div>
         </div>
 
-            <img class="triangulos-footer"
-            src="src/img/back-tri-footer.png"
-            alt="">
+        <img class="triangulos-footer" src="src/img/back-tri-footer.png" alt="">
 
-            <div class="copyright">
-                © 2026 Alimentando o Mundo. All rights reserved.
-            </div>
+        <div class="copyright">
+            © 2026 Alimentando o Mundo. All rights reserved.
+        </div>
     </footer>
 
     <script src="src/js/quiz.js"></script>

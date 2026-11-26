@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ranking | Alimentando o Mundo</title>
 
@@ -14,82 +13,82 @@
     <link rel="stylesheet" href="src/css/quiz.css">
     <link rel="stylesheet" href="src/css/reveal.css">
     <link rel="stylesheet" href="src/css/nav.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="src/fav-icon/favicon.ico">
-    <script src="src/js/script.js"></script>
+    <script src="src/js/script.js" defer></script>
 
 </head>
 
 <body>
 
 
-<header class="header">
-<section id="nav-bar">
+    <header class="header">
+        <section id="nav-bar">
             <a href="index.html" class="logo"><img src="src/img/logo-v2.png" alt="logo"></a>
-                <nav id="nav_bar">
-                    <ul class="menu">
-                        <li>
-                            <a href="index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="B-tec.html">Tecnologia</a>
-                        </li>
-                        <li>
-                            <a href="C-agricultura.html">Agricultura em Larga Escala</a>
-                        </li>
-                        <li>
-                            <a href="D-sustentabilidade.html">Sustentabilidade</a>
-                        </li>
-                        <li>
-                            <a href="Desafios.html">Desafios na Produção</a>
-                        </li>
-                        <li>
-                            <a href="quiz.html">Quiz</a>
-                        </li>
-                        <li>
-                            <a href="G-sobre.html">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
-                        </li>
-                    </ul>
-                </nav>
-                <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-            </section> 
+            <nav id="nav_bar">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="B-tec.html">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="C-agricultura.html">Agricultura em Larga Escala</a>
+                    </li>
+                    <li>
+                        <a href="D-sustentabilidade.html">Sustentabilidade</a>
+                    </li>
+                    <li>
+                        <a href="Desafios.html">Desafios na Produção</a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="G-sobre.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="pesquisaDeSatisfação.html">Pesquisa de satisfação</a>
+                    </li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Ativar modo escuro" title="Alternar tema">
+                <span class="material-icons">dark_mode</span>
+            </button>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        </section>
     </header>
 
 
-<main class="ranking">
+    <main class="ranking">
 
-    <h1>
-        <span>
-            RANKING
-        </span>
-    </h1>
+        <h1>
+            <span>
+                RANKING
+            </span>
+        </h1>
 
-    <p>
-        Veja como você se saiu!
-    </p>
+        <p>
+            Veja como você se saiu!
+        </p>
 
-    <div id="listaRanking"></div>
+        <div id="listaRanking"></div>
 
 
-    <button
-        class="btn-principal"
-        onclick="location.href='quiz.html'">
+        <button class="btn-principal" onclick="location.href='quiz.html'">
 
-        JOGAR NOVAMENTE →
+            JOGAR NOVAMENTE →
 
-    </button>
+        </button>
 
-</main>
-<footer>
+    </main>
+    <footer>
         <div class="footer-content">
 
-                <div class="geral">
-                    <div class="titulo">
-                        <img src="src/img/logo-v2.png" alt="">
+            <div class="geral">
+                <div class="titulo">
+                    <img src="src/img/logo-v2.png" alt="">
                     <h2>Alimentando o Mundo</h2>
                 </div>
                 <p>
@@ -117,65 +116,66 @@
                 </a>
 
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png" alt="Instagram"></a>
-                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/alimentando.mundo/"><img src="src/img/Insta-preto.png"
+                            alt="Instagram"></a>
+                    <a href="https://github.com/Alimentando-o-Mundo"><img src="src/img/GitHub_Invertocat_Black 1.png"
+                            alt="GitHub"></a>
                 </div>
 
             </div>
         </div>
 
-            <img class="triangulos-footer"
-            src="src/img/back-tri-footer.png"
-            alt="">
+        <img class="triangulos-footer" src="src/img/back-tri-footer.png" alt="">
 
-            <div class="copyright">
-                © 2026 Alimentando o Mundo. All rights reserved.
-            </div>
+        <div class="copyright">
+            © 2026 Alimentando o Mundo. All rights reserved.
+        </div>
     </footer>
 </body>
+
 </html>
 
 <script>
 
-const ranking =
-    JSON.parse(
-        localStorage.getItem("ranking")
-    ) || [];
+    const ranking =
+        JSON.parse(
+            localStorage.getItem("ranking")
+        ) || [];
 
 
-const lista =
-    document.getElementById("listaRanking");
+    const lista =
+        document.getElementById("listaRanking");
 
 
-if (ranking.length === 0) {
+    if (ranking.length === 0) {
 
-    lista.innerHTML = `
+        lista.innerHTML = `
         <div class="sem-ranking">
             Ainda não existem jogadores.
         </div>
     `;
 
-}
+    }
 
 
-ranking.slice(0, 10).forEach((jogador, index) => {
+    ranking.slice(0, 10).forEach((jogador, index) => {
 
-    const item =
-        document.createElement("div");
-
-
-    item.classList.add("jogador");
+        const item =
+            document.createElement("div");
 
 
-    let medalha = index + 1;
+        item.classList.add("jogador");
 
 
-    if (index === 0) medalha = "🥇";
-    if (index === 1) medalha = "🥈";
-    if (index === 2) medalha = "🥉";
+        let medalha = index + 1;
 
 
-    item.innerHTML = `
+        if (index === 0) medalha = "🥇";
+        if (index === 1) medalha = "🥈";
+        if (index === 2) medalha = "🥉";
+
+
+        item.innerHTML = `
 
         <div class="posicao">
             ${medalha}
@@ -192,9 +192,9 @@ ranking.slice(0, 10).forEach((jogador, index) => {
     `;
 
 
-    lista.appendChild(item);
+        lista.appendChild(item);
 
-});
+    });
 
 </script>
 
